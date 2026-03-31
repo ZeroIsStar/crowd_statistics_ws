@@ -1,0 +1,311 @@
+[0.000000] (-) TimerEvent: {}
+[0.004687] (crowd_statistics) JobQueued: {'identifier': 'crowd_statistics', 'dependencies': OrderedDict()}
+[0.005059] (crowd_statistics) JobStarted: {'identifier': 'crowd_statistics'}
+[0.027377] (crowd_statistics) JobProgress: {'identifier': 'crowd_statistics', 'progress': 'cmake'}
+[0.028794] (crowd_statistics) JobProgress: {'identifier': 'crowd_statistics', 'progress': 'build'}
+[0.030460] (crowd_statistics) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics', '--', '-j24', '-l24'], 'cwd': '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.11.3.6-1'), ('PANEL_BACK_CAMERA', '1'), ('NV_NVPROF_DEV_PACKAGE', 'cuda-nvprof-11-8=11.8.87-1'), ('ENABLE_GARBAGE_SEARCH_CLEANING', 'False'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '11.8.0-1'), ('HOSTNAME', 'tj2022-Default-string'), ('GIT_ASKPASS', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass.sh'), ('PANEL_FRONT_CAMERA', '0'), ('FRONT_DEPTH_CAMERA', '0'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/helpers/browser.sh'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.15.5-1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/map/dds.xml'), ('OLDPWD', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics'), ('NV_CUDNN_PACKAGE_NAME', 'libcudnn8'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('NV_LIBCUBLAS_DEV_VERSION', '11.11.3.6-1'), ('ENABLE_INSPECTION', 'False'), ('ROBOT_VERSION', 'cleaner'), ('VSCODE_IPC_HOOK_CLI', '/tmp/run/vscode-ipc-95b3220e-8152-4714-ac5c-ccf3e869c88f.sock'), ('PANEL_FRONT_CAMERA_FLIP', '1'), ('ROS_PYTHON_VERSION', '3'), ('USE_CURB_EXTRACTION', 'True'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/node'), ('ENABLE_AVOIDING_PEDESTRIANS_DETECTION', 'False'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.15.5-1'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-8=11.8.0.86-1'), ('REMOTE_CONTAINERS', 'true'), ('NV_CUDNN_PACKAGE', 'libcudnn8=8.9.6.50-1+cuda11.8'), ('CUDA_VERSION', '11.8.0'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install:/opt/ros/humble'), ('NV_NVPROF_VERSION', '11.8.87-1'), ('ROS_DISTRO', 'humble'), ('CAPELLA_ROS_HEADLESS', 'True'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-8'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.7.5.86-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,video,graphics,utility'), ('NV_CUDA_LIB_VERSION', '11.8.0-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.8.86-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-8=11.8.0.86-1'), ('TERM', 'xterm-256color'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('NV_CUDNN_PACKAGE_DEV', 'libcudnn8-dev=8.9.6.50-1+cuda11.8'), ('ROS_LOCALHOST_ONLY', '0'), ('CAMERAS', '[{"name":"rgb_camera_front", "config_file":"front.yaml"},{"name":"rgb_camera_right", "config_file":"right.yaml"}, {"name":"rgb_camera_back", "config_file":"back.yaml"},{"name":"rgb_camera_left", "config_file":"left.yaml"}]'), ('PATH', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/remote-cli:/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-8'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-8=11.11.3.6-1'), ('NVARCH', 'x86_64'), ('PANEL_FRONT_CAMERA_ROTATION', '0'), ('XDG_RUNTIME_DIR', '/tmp/run'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.7.5.86-1'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.15.5-1+cuda11.8'), ('IMAGE_VERSION', 'S1.1.0_4060'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-da0b57f224e5d000.txt'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/6b5397c6121a0411a7faf716aa6321a3/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '11.8.89-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('OUTDOOR_ROBOT_VERSION', 'outdoor_cleaner_3'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/run/vscode-git-85bf436c00.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock'), ('AMENT_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-8=11.11.3.6-1'), ('USE_AD_VIEWER_COUNT', 'False'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-11-8=11.8.0-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.15.5-1+cuda11.8'), ('ENABLE_FIRE_DETECTION', 'False'), ('NV_NVTX_VERSION', '11.8.86-1'), ('NV_LIBNPP_VERSION', '11.8.0.86-1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('ENABLE_VEHICLE_AVOIDANCE', 'False'), ('NV_CUDNN_VERSION', '8.9.6.50'), ('PWD', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics'), ('PYTHONPATH', '/usr/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/dist-packages:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.15.5-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.8.0.86-1'), ('CMAKE_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble')]), 'shell': False}
+[0.098966] (-) TimerEvent: {}
+[0.199815] (-) TimerEvent: {}
+[0.301443] (-) TimerEvent: {}
+[0.321305] (crowd_statistics) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o\x1b[0m\n'}
+[0.401715] (-) TimerEvent: {}
+[0.505076] (-) TimerEvent: {}
+[0.605899] (-) TimerEvent: {}
+[0.706804] (-) TimerEvent: {}
+[0.807663] (-) TimerEvent: {}
+[0.908432] (-) TimerEvent: {}
+[1.009275] (-) TimerEvent: {}
+[1.110300] (-) TimerEvent: {}
+[1.211939] (-) TimerEvent: {}
+[1.312870] (-) TimerEvent: {}
+[1.413928] (-) TimerEvent: {}
+[1.514923] (-) TimerEvent: {}
+[1.616065] (-) TimerEvent: {}
+[1.716777] (-) TimerEvent: {}
+[1.817432] (-) TimerEvent: {}
+[1.917804] (-) TimerEvent: {}
+[2.018398] (-) TimerEvent: {}
+[2.119424] (-) TimerEvent: {}
+[2.220069] (-) TimerEvent: {}
+[2.320681] (-) TimerEvent: {}
+[2.421243] (-) TimerEvent: {}
+[2.521783] (-) TimerEvent: {}
+[2.622359] (-) TimerEvent: {}
+[2.723492] (-) TimerEvent: {}
+[2.824825] (-) TimerEvent: {}
+[2.927068] (-) TimerEvent: {}
+[3.028062] (-) TimerEvent: {}
+[3.129093] (-) TimerEvent: {}
+[3.230506] (-) TimerEvent: {}
+[3.332160] (-) TimerEvent: {}
+[3.434033] (-) TimerEvent: {}
+[3.537709] (-) TimerEvent: {}
+[3.638996] (-) TimerEvent: {}
+[3.743171] (-) TimerEvent: {}
+[3.844905] (-) TimerEvent: {}
+[3.945938] (-) TimerEvent: {}
+[4.047662] (-) TimerEvent: {}
+[4.149284] (-) TimerEvent: {}
+[4.250888] (-) TimerEvent: {}
+[4.352575] (-) TimerEvent: {}
+[4.457139] (-) TimerEvent: {}
+[4.558647] (-) TimerEvent: {}
+[4.659879] (-) TimerEvent: {}
+[4.761512] (-) TimerEvent: {}
+[4.862646] (-) TimerEvent: {}
+[4.966080] (-) TimerEvent: {}
+[5.069380] (-) TimerEvent: {}
+[5.170453] (-) TimerEvent: {}
+[5.272684] (-) TimerEvent: {}
+[5.374390] (-) TimerEvent: {}
+[5.475429] (-) TimerEvent: {}
+[5.576716] (-) TimerEvent: {}
+[5.681016] (-) TimerEvent: {}
+[5.786007] (-) TimerEvent: {}
+[5.887523] (-) TimerEvent: {}
+[5.991208] (-) TimerEvent: {}
+[6.092311] (-) TimerEvent: {}
+[6.193718] (-) TimerEvent: {}
+[6.294635] (-) TimerEvent: {}
+[6.395549] (-) TimerEvent: {}
+[6.496554] (-) TimerEvent: {}
+[6.597375] (-) TimerEvent: {}
+[6.699157] (-) TimerEvent: {}
+[6.801407] (-) TimerEvent: {}
+[6.902687] (-) TimerEvent: {}
+[7.003864] (-) TimerEvent: {}
+[7.104935] (-) TimerEvent: {}
+[7.205900] (-) TimerEvent: {}
+[7.306797] (-) TimerEvent: {}
+[7.407442] (-) TimerEvent: {}
+[7.508049] (-) TimerEvent: {}
+[7.609443] (-) TimerEvent: {}
+[7.716258] (-) TimerEvent: {}
+[7.817112] (-) TimerEvent: {}
+[7.917967] (-) TimerEvent: {}
+[8.018978] (-) TimerEvent: {}
+[8.119710] (-) TimerEvent: {}
+[8.220441] (-) TimerEvent: {}
+[8.321871] (-) TimerEvent: {}
+[8.422692] (-) TimerEvent: {}
+[8.523699] (-) TimerEvent: {}
+[8.624372] (-) TimerEvent: {}
+[8.725127] (-) TimerEvent: {}
+[8.826497] (-) TimerEvent: {}
+[8.927656] (-) TimerEvent: {}
+[9.028651] (-) TimerEvent: {}
+[9.129870] (-) TimerEvent: {}
+[9.230695] (-) TimerEvent: {}
+[9.331904] (-) TimerEvent: {}
+[9.432914] (-) TimerEvent: {}
+[9.533733] (-) TimerEvent: {}
+[9.634546] (-) TimerEvent: {}
+[9.736637] (-) TimerEvent: {}
+[9.838016] (-) TimerEvent: {}
+[9.940295] (-) TimerEvent: {}
+[10.042087] (-) TimerEvent: {}
+[10.143302] (-) TimerEvent: {}
+[10.244379] (-) TimerEvent: {}
+[10.345676] (-) TimerEvent: {}
+[10.447392] (-) TimerEvent: {}
+[10.548880] (-) TimerEvent: {}
+[10.650600] (-) TimerEvent: {}
+[10.755224] (-) TimerEvent: {}
+[10.856807] (-) TimerEvent: {}
+[10.959002] (-) TimerEvent: {}
+[11.061368] (-) TimerEvent: {}
+[11.162993] (-) TimerEvent: {}
+[11.264519] (-) TimerEvent: {}
+[11.366743] (-) TimerEvent: {}
+[11.469621] (-) TimerEvent: {}
+[11.571385] (-) TimerEvent: {}
+[11.672328] (-) TimerEvent: {}
+[11.773644] (-) TimerEvent: {}
+[11.875766] (-) TimerEvent: {}
+[11.981462] (-) TimerEvent: {}
+[12.082335] (-) TimerEvent: {}
+[12.183531] (-) TimerEvent: {}
+[12.284685] (-) TimerEvent: {}
+[12.387257] (-) TimerEvent: {}
+[12.497702] (-) TimerEvent: {}
+[12.606175] (-) TimerEvent: {}
+[12.709033] (-) TimerEvent: {}
+[12.809818] (-) TimerEvent: {}
+[12.911082] (-) TimerEvent: {}
+[13.012820] (-) TimerEvent: {}
+[13.113640] (-) TimerEvent: {}
+[13.215069] (-) TimerEvent: {}
+[13.315962] (-) TimerEvent: {}
+[13.417221] (-) TimerEvent: {}
+[13.517957] (-) TimerEvent: {}
+[13.618688] (-) TimerEvent: {}
+[13.719402] (-) TimerEvent: {}
+[13.820405] (-) TimerEvent: {}
+[13.921265] (-) TimerEvent: {}
+[14.022445] (-) TimerEvent: {}
+[14.123716] (-) TimerEvent: {}
+[14.224636] (-) TimerEvent: {}
+[14.325698] (-) TimerEvent: {}
+[14.426517] (-) TimerEvent: {}
+[14.527107] (-) TimerEvent: {}
+[14.627537] (-) TimerEvent: {}
+[14.728647] (-) TimerEvent: {}
+[14.829657] (-) TimerEvent: {}
+[14.930418] (-) TimerEvent: {}
+[15.031665] (-) TimerEvent: {}
+[15.132318] (-) TimerEvent: {}
+[15.233149] (-) TimerEvent: {}
+[15.334093] (-) TimerEvent: {}
+[15.434949] (-) TimerEvent: {}
+[15.535786] (-) TimerEvent: {}
+[15.636811] (-) TimerEvent: {}
+[15.738299] (-) TimerEvent: {}
+[15.839463] (-) TimerEvent: {}
+[15.941530] (-) TimerEvent: {}
+[16.043285] (-) TimerEvent: {}
+[16.145163] (-) TimerEvent: {}
+[16.245691] (-) TimerEvent: {}
+[16.347221] (-) TimerEvent: {}
+[16.448546] (-) TimerEvent: {}
+[16.550760] (-) TimerEvent: {}
+[16.652869] (-) TimerEvent: {}
+[16.757318] (-) TimerEvent: {}
+[16.858886] (-) TimerEvent: {}
+[16.960941] (-) TimerEvent: {}
+[17.063235] (-) TimerEvent: {}
+[17.164518] (-) TimerEvent: {}
+[17.265650] (-) TimerEvent: {}
+[17.367088] (-) TimerEvent: {}
+[17.468663] (-) TimerEvent: {}
+[17.569449] (-) TimerEvent: {}
+[17.670479] (-) TimerEvent: {}
+[17.772729] (-) TimerEvent: {}
+[17.873932] (-) TimerEvent: {}
+[17.975089] (-) TimerEvent: {}
+[18.076123] (-) TimerEvent: {}
+[18.177454] (-) TimerEvent: {}
+[18.278464] (-) TimerEvent: {}
+[18.379750] (-) TimerEvent: {}
+[18.480507] (-) TimerEvent: {}
+[18.581292] (-) TimerEvent: {}
+[18.682180] (-) TimerEvent: {}
+[18.783329] (-) TimerEvent: {}
+[18.885535] (-) TimerEvent: {}
+[18.991567] (-) TimerEvent: {}
+[19.092571] (-) TimerEvent: {}
+[19.193424] (-) TimerEvent: {}
+[19.294319] (-) TimerEvent: {}
+[19.396104] (-) TimerEvent: {}
+[19.496952] (-) TimerEvent: {}
+[19.598172] (-) TimerEvent: {}
+[19.699521] (-) TimerEvent: {}
+[19.800505] (-) TimerEvent: {}
+[19.901294] (-) TimerEvent: {}
+[20.002266] (-) TimerEvent: {}
+[20.103408] (-) TimerEvent: {}
+[20.204177] (-) TimerEvent: {}
+[20.304813] (-) TimerEvent: {}
+[20.405489] (-) TimerEvent: {}
+[20.506137] (-) TimerEvent: {}
+[20.607981] (-) TimerEvent: {}
+[20.708588] (-) TimerEvent: {}
+[20.809069] (-) TimerEvent: {}
+[20.909551] (-) TimerEvent: {}
+[21.010073] (-) TimerEvent: {}
+[21.110942] (-) TimerEvent: {}
+[21.212231] (-) TimerEvent: {}
+[21.312977] (-) TimerEvent: {}
+[21.413674] (-) TimerEvent: {}
+[21.514489] (-) TimerEvent: {}
+[21.615874] (-) TimerEvent: {}
+[21.716736] (-) TimerEvent: {}
+[21.818690] (-) TimerEvent: {}
+[21.922335] (-) TimerEvent: {}
+[22.023132] (-) TimerEvent: {}
+[22.124303] (-) TimerEvent: {}
+[22.225498] (-) TimerEvent: {}
+[22.326577] (-) TimerEvent: {}
+[22.427913] (-) TimerEvent: {}
+[22.529450] (-) TimerEvent: {}
+[22.630775] (-) TimerEvent: {}
+[22.731386] (-) TimerEvent: {}
+[22.832442] (-) TimerEvent: {}
+[22.933406] (-) TimerEvent: {}
+[23.034016] (-) TimerEvent: {}
+[23.134819] (-) TimerEvent: {}
+[23.235390] (-) TimerEvent: {}
+[23.336025] (-) TimerEvent: {}
+[23.436719] (-) TimerEvent: {}
+[23.538224] (-) TimerEvent: {}
+[23.638859] (-) TimerEvent: {}
+[23.739493] (-) TimerEvent: {}
+[23.840231] (-) TimerEvent: {}
+[23.941337] (-) TimerEvent: {}
+[24.046319] (-) TimerEvent: {}
+[24.146993] (-) TimerEvent: {}
+[24.247823] (-) TimerEvent: {}
+[24.348870] (-) TimerEvent: {}
+[24.449871] (-) TimerEvent: {}
+[24.550568] (-) TimerEvent: {}
+[24.652443] (-) TimerEvent: {}
+[24.753440] (-) TimerEvent: {}
+[24.855079] (-) TimerEvent: {}
+[24.955999] (-) TimerEvent: {}
+[25.058090] (-) TimerEvent: {}
+[25.159040] (-) TimerEvent: {}
+[25.261306] (-) TimerEvent: {}
+[25.362765] (-) TimerEvent: {}
+[25.463865] (-) TimerEvent: {}
+[25.566376] (-) TimerEvent: {}
+[25.667405] (-) TimerEvent: {}
+[25.765759] (crowd_statistics) StdoutLine: {'line': b'[100%] \x1b[1m\x1b[32mLinking CXX executable crowd_statistics_node\x1b[0m\n'}
+[25.767685] (-) TimerEvent: {}
+[25.871081] (-) TimerEvent: {}
+[25.972197] (-) TimerEvent: {}
+[26.073574] (-) TimerEvent: {}
+[26.177341] (-) TimerEvent: {}
+[26.278272] (-) TimerEvent: {}
+[26.380116] (-) TimerEvent: {}
+[26.481406] (-) TimerEvent: {}
+[26.582369] (-) TimerEvent: {}
+[26.683403] (-) TimerEvent: {}
+[26.784891] (-) TimerEvent: {}
+[26.886281] (-) TimerEvent: {}
+[26.987710] (-) TimerEvent: {}
+[27.096616] (-) TimerEvent: {}
+[27.197687] (-) TimerEvent: {}
+[27.299424] (-) TimerEvent: {}
+[27.401162] (-) TimerEvent: {}
+[27.507029] (-) TimerEvent: {}
+[27.607949] (-) TimerEvent: {}
+[27.706100] (crowd_statistics) StdoutLine: {'line': b'[100%] Built target crowd_statistics_node\n'}
+[27.708175] (-) TimerEvent: {}
+[27.726134] (crowd_statistics) CommandEnded: {'returncode': 0}
+[27.731719] (crowd_statistics) JobProgress: {'identifier': 'crowd_statistics', 'progress': 'install'}
+[27.808473] (-) TimerEvent: {}
+[27.909194] (-) TimerEvent: {}
+[27.942450] (crowd_statistics) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics'], 'cwd': '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.11.3.6-1'), ('PANEL_BACK_CAMERA', '1'), ('NV_NVPROF_DEV_PACKAGE', 'cuda-nvprof-11-8=11.8.87-1'), ('ENABLE_GARBAGE_SEARCH_CLEANING', 'False'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '11.8.0-1'), ('HOSTNAME', 'tj2022-Default-string'), ('GIT_ASKPASS', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass.sh'), ('PANEL_FRONT_CAMERA', '0'), ('FRONT_DEPTH_CAMERA', '0'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/helpers/browser.sh'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.15.5-1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/map/dds.xml'), ('OLDPWD', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics'), ('NV_CUDNN_PACKAGE_NAME', 'libcudnn8'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('NV_LIBCUBLAS_DEV_VERSION', '11.11.3.6-1'), ('ENABLE_INSPECTION', 'False'), ('ROBOT_VERSION', 'cleaner'), ('VSCODE_IPC_HOOK_CLI', '/tmp/run/vscode-ipc-95b3220e-8152-4714-ac5c-ccf3e869c88f.sock'), ('PANEL_FRONT_CAMERA_FLIP', '1'), ('ROS_PYTHON_VERSION', '3'), ('USE_CURB_EXTRACTION', 'True'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/node'), ('ENABLE_AVOIDING_PEDESTRIANS_DETECTION', 'False'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.15.5-1'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-8=11.8.0.86-1'), ('REMOTE_CONTAINERS', 'true'), ('NV_CUDNN_PACKAGE', 'libcudnn8=8.9.6.50-1+cuda11.8'), ('CUDA_VERSION', '11.8.0'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install:/opt/ros/humble'), ('NV_NVPROF_VERSION', '11.8.87-1'), ('ROS_DISTRO', 'humble'), ('CAPELLA_ROS_HEADLESS', 'True'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-8'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.7.5.86-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,video,graphics,utility'), ('NV_CUDA_LIB_VERSION', '11.8.0-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.8.86-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-8=11.8.0.86-1'), ('TERM', 'xterm-256color'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('NV_CUDNN_PACKAGE_DEV', 'libcudnn8-dev=8.9.6.50-1+cuda11.8'), ('ROS_LOCALHOST_ONLY', '0'), ('CAMERAS', '[{"name":"rgb_camera_front", "config_file":"front.yaml"},{"name":"rgb_camera_right", "config_file":"right.yaml"}, {"name":"rgb_camera_back", "config_file":"back.yaml"},{"name":"rgb_camera_left", "config_file":"left.yaml"}]'), ('PATH', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/remote-cli:/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-8'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-8=11.11.3.6-1'), ('NVARCH', 'x86_64'), ('PANEL_FRONT_CAMERA_ROTATION', '0'), ('XDG_RUNTIME_DIR', '/tmp/run'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.7.5.86-1'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.15.5-1+cuda11.8'), ('IMAGE_VERSION', 'S1.1.0_4060'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-da0b57f224e5d000.txt'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/6b5397c6121a0411a7faf716aa6321a3/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '11.8.89-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('OUTDOOR_ROBOT_VERSION', 'outdoor_cleaner_3'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/run/vscode-git-85bf436c00.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock'), ('AMENT_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-8=11.11.3.6-1'), ('USE_AD_VIEWER_COUNT', 'False'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-11-8=11.8.0-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.15.5-1+cuda11.8'), ('ENABLE_FIRE_DETECTION', 'False'), ('NV_NVTX_VERSION', '11.8.86-1'), ('NV_LIBNPP_VERSION', '11.8.0.86-1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('ENABLE_VEHICLE_AVOIDANCE', 'False'), ('NV_CUDNN_VERSION', '8.9.6.50'), ('PWD', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics'), ('PYTHONPATH', '/usr/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/dist-packages:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.15.5-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.8.0.86-1'), ('CMAKE_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble')]), 'shell': False}
+[28.009393] (-) TimerEvent: {}
+[28.110225] (-) TimerEvent: {}
+[28.139553] (crowd_statistics) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[28.140441] (crowd_statistics) StdoutLine: {'line': b'-- Installing: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/lib/crowd_statistics/crowd_statistics_node\n'}
+[28.151067] (crowd_statistics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/lib/crowd_statistics/crowd_statistics_node" to ""\n'}
+[28.151885] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/ament_index/resource_index/package_run_dependencies/crowd_statistics\n'}
+[28.152104] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/ament_index/resource_index/parent_prefix_path/crowd_statistics\n'}
+[28.152401] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/ament_prefix_path.sh\n'}
+[28.152478] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/ament_prefix_path.dsv\n'}
+[28.152545] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/path.sh\n'}
+[28.152627] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/path.dsv\n'}
+[28.152708] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.bash\n'}
+[28.153157] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.sh\n'}
+[28.153412] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.zsh\n'}
+[28.153600] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.dsv\n'}
+[28.153768] (crowd_statistics) StdoutLine: {'line': b'-- Installing: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/package.dsv\n'}
+[28.153956] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/ament_index/resource_index/packages/crowd_statistics\n'}
+[28.154130] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/cmake/crowd_statisticsConfig.cmake\n'}
+[28.154299] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/cmake/crowd_statisticsConfig-version.cmake\n'}
+[28.154457] (crowd_statistics) StdoutLine: {'line': b'-- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/package.xml\n'}
+[28.161381] (crowd_statistics) CommandEnded: {'returncode': 0}
+[28.210366] (-) TimerEvent: {}
+[28.216448] (crowd_statistics) JobEnded: {'identifier': 'crowd_statistics', 'rc': 0}
+[28.218478] (-) EventReactorShutdown: {}

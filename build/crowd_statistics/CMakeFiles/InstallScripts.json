@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

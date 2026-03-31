@@ -1,0 +1,4 @@
+source;share/crowd_statistics/local_setup.bash
+source;share/crowd_statistics/local_setup.dsv
+source;share/crowd_statistics/local_setup.sh
+source;share/crowd_statistics/local_setup.zsh

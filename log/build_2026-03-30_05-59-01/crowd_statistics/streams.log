@@ -1,0 +1,185 @@
+[0.027s] Invoking command in '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics': CMAKE_PREFIX_PATH=/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble /usr/local/bin/cmake --build /capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics -- -j24 -l24
+[0.264s] [ 50%] [32mBuilding CXX object CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o[0m
+[5.904s] In file included from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[5.904s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:124:36:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kcv::String[m[K’?
+[5.905s]   124 |   rclcpp::Publisher<std_msgs::msg::[01;31m[KString[m[K>::SharedPtr stats_pub_;  // 或自定义消息
+[5.905s]       |                                    [01;31m[K^~~~~~[m[K
+[5.905s] In file included from [01m[K/usr/local/include/opencv4/opencv2/core/base.hpp:58[m[K,
+[5.905s]                  from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:53[m[K,
+[5.905s]                  from [01m[K/usr/local/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[5.905s]                  from [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43[m[K,
+[5.905s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:17[m[K,
+[5.905s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[5.905s] [01m[K/usr/local/include/opencv4/opencv2/core/cvstd.hpp:152:21:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::String[m[K’ declared here
+[5.905s]   152 | typedef std::string [01;36m[KString[m[K;
+[5.905s]       |                     [01;36m[K^~~~~~[m[K
+[5.905s] In file included from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[5.905s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:124:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[5.905s]   124 |   rclcpp::Publisher<std_msgs::msg::String[01;31m[K>[m[K::SharedPtr stats_pub_;  // 或自定义消息
+[5.905s]       |                                          [01;31m[K^[m[K
+[5.906s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:124:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[5.906s]   124 |   rclcpp::Publisher<std_msgs::msg::String>::[01;31m[KSharedPtr[m[K stats_pub_;  // 或自定义消息
+[5.906s]       |                                             [01;31m[K^~~~~~~~~[m[K
+[5.906s]       |                                                      [32m[K;[m[K
+[5.909s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:124:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kstats_pub_[m[K’ does not name a type
+[5.909s]   124 |   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr [01;31m[Kstats_pub_[m[K;  // 或自定义消息
+[5.909s]       |                                                       [01;31m[K^~~~~~~~~~[m[K
+[6.199s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:[m[K In constructor ‘[01m[Kcrowd_statistics::CrowdStatisticsNode::CrowdStatisticsNode()[m[K’:
+[6.200s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:201:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstats_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kstats_mutex_[m[K’?
+[6.200s]   201 |   [01;31m[Kstats_pub_[m[K = this->create_publisher<std_msgs::msg::String>(
+[6.200s]       |   [01;31m[K^~~~~~~~~~[m[K
+[6.200s]       |   [32m[Kstats_mutex_[m[K
+[6.201s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:201:54:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kcv::String[m[K’?
+[6.202s]   201 |   stats_pub_ = this->create_publisher<std_msgs::msg::[01;31m[KString[m[K>(
+[6.202s]       |                                                      [01;31m[K^~~~~~[m[K
+[6.202s] In file included from [01m[K/usr/local/include/opencv4/opencv2/core/base.hpp:58[m[K,
+[6.202s]                  from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:53[m[K,
+[6.202s]                  from [01m[K/usr/local/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[6.202s]                  from [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43[m[K,
+[6.203s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:17[m[K,
+[6.203s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.203s] [01m[K/usr/local/include/opencv4/opencv2/core/cvstd.hpp:152:21:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::String[m[K’ declared here
+[6.203s]   152 | typedef std::string [01;36m[KString[m[K;
+[6.203s]       |                     [01;36m[K^~~~~~[m[K
+[6.203s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:201:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcrowd_statistics::CrowdStatisticsNode::create_publisher<<expression error> >(const char [24], int)[m[K’
+[6.204s]   201 |   stats_pub_ = [01;31m[Kthis->create_publisher<std_msgs::msg::String>([m[K
+[6.204s]       |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[6.204s]   202 | [01;31m[K      "/crowd_statistics/stats", 10)[m[K;
+[6.204s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+[6.204s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[6.204s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[6.205s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[6.205s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.205s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:10[m[K,
+[6.205s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.205s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[6.206s]    73 | [01;36m[KNode[m[K::create_publisher(
+[6.206s]       | [01;36m[K^~~~[m[K
+[6.206s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[6.206s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:201:61:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[6.206s]   201 |   stats_pub_ = [01;31m[Kthis->create_publisher<std_msgs::msg::String>([m[K
+[6.206s]       |                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[6.207s]   202 | [01;31m[K      "/crowd_statistics/stats", 10)[m[K;
+[6.207s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                         
+[6.275s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:[m[K In member function ‘[01m[Kvoid crowd_statistics::CrowdStatisticsNode::publishStats(const crowd_statistics::CrowdStats&)[m[K’:
+[6.276s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:453:18:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’; did you mean ‘[01m[Kcv::String[m[K’?
+[6.276s]   453 |   std_msgs::msg::[01;31m[KString[m[K msg;
+[6.276s]       |                  [01;31m[K^~~~~~[m[K
+[6.277s] In file included from [01m[K/usr/local/include/opencv4/opencv2/core/base.hpp:58[m[K,
+[6.277s]                  from [01m[K/usr/local/include/opencv4/opencv2/core.hpp:53[m[K,
+[6.278s]                  from [01m[K/usr/local/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[6.278s]                  from [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43[m[K,
+[6.278s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:17[m[K,
+[6.278s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.278s] [01m[K/usr/local/include/opencv4/opencv2/core/cvstd.hpp:152:21:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::String[m[K’ declared here
+[6.278s]   152 | typedef std::string [01;36m[KString[m[K;
+[6.278s]       |                     [01;36m[K^~~~~~[m[K
+[6.278s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:456:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class rclcpp::Time[m[K’ has no member named ‘[01m[Ksec[m[K’
+[6.278s]   456 |   ss << "timestamp: " << stats.stamp.[01;31m[Ksec[m[K << "." << stats.stamp.nanosec
+[6.278s]       |                                      [01;31m[K^~~[m[K
+[6.279s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:456:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class rclcpp::Time[m[K’ has no member named ‘[01m[Knanosec[m[K’; did you mean ‘[01m[Knanoseconds[m[K’?
+[6.279s]   456 |   ss << "timestamp: " << stats.stamp.sec << "." << stats.stamp.[01;31m[Knanosec[m[K
+[6.279s]       |                                                                [01;31m[K^~~~~~~[m[K
+[6.279s]       |                                                                [32m[Knanoseconds[m[K
+[6.279s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:460:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[6.279s]   460 |   [01;31m[Kmsg[m[K.data = ss.str();
+[6.279s]       |   [01;31m[K^~~[m[K
+[6.279s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:460:3:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[6.279s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[6.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[6.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[6.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[6.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[6.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[6.279s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[6.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.280s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:10[m[K,
+[6.280s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.280s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[6.280s]    27 | namespace [01;36m[Kmsg[m[K
+[6.280s]       |           [01;36m[K^~~[m[K
+[6.280s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[6.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[6.280s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.281s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:10[m[K,
+[6.281s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.281s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[6.281s]    27 | namespace [01;36m[Kmsg[m[K
+[6.281s]       |           [01;36m[K^~~[m[K
+[6.281s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[6.281s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[6.282s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[6.282s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:10[m[K,
+[6.282s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.282s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[6.282s]    27 | namespace [01;36m[Kmsg[m[K
+[6.283s]       |           [01;36m[K^~~[m[K
+[6.283s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:20[m[K,
+[6.283s]                  from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp:7[m[K,
+[6.283s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:11[m[K,
+[6.283s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.283s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[6.283s]    31 | namespace [01;36m[Kmsg[m[K
+[6.283s]       |           [01;36m[K^~~[m[K
+[6.283s] In file included from [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp:7[m[K,
+[6.283s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:11[m[K,
+[6.283s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.283s] [01m[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ksensor_msgs::msg[m[K’
+[6.283s]    31 | namespace [01;36m[Kmsg[m[K
+[6.283s]       |           [01;36m[K^~~[m[K
+[6.283s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp:22[m[K,
+[6.284s]                  from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:7[m[K,
+[6.284s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:14[m[K,
+[6.284s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.284s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg[m[K’
+[6.284s]    27 | namespace [01;36m[Kmsg[m[K
+[6.284s]       |           [01;36m[K^~~[m[K
+[6.284s] In file included from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:35[m[K,
+[6.284s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp:20[m[K,
+[6.284s]                  from [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker_array.hpp:7[m[K,
+[6.284s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:16[m[K,
+[6.285s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.285s] [01m[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kvisualization_msgs::msg[m[K’
+[6.285s]    27 | namespace [01;36m[Kmsg[m[K
+[6.285s]       |           [01;36m[K^~~[m[K
+[6.285s] In file included from [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:7[m[K,
+[6.285s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp:44[m[K,
+[6.285s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:35[m[K,
+[6.285s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:19[m[K,
+[6.285s]                  from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[6.285s] [01m[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:31:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2_msgs::msg[m[K’
+[6.285s]    31 | namespace [01;36m[Kmsg[m[K
+[6.285s]       |           [01;36m[K^~~[m[K
+[6.292s] [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:461:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstats_pub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kstats_mutex_[m[K’?
+[6.293s]   461 |   [01;31m[Kstats_pub_[m[K->publish(msg);
+[6.293s]       |   [01;31m[K^~~~~~~~~~[m[K
+[6.293s]       |   [32m[Kstats_mutex_[m[K
+[13.280s] gmake[2]: *** [CMakeFiles/crowd_statistics_node.dir/build.make:79: CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o] Error 1
+[13.280s] gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/crowd_statistics_node.dir/all] Error 2
+[13.281s] gmake: *** [Makefile:146: all] Error 2
+[13.284s] Invoked command in '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics' returned '2': CMAKE_PREFIX_PATH=/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble /usr/local/bin/cmake --build /capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics -- -j24 -l24

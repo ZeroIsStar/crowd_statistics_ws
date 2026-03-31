@@ -1,0 +1,323 @@
+[0.000000] (-) TimerEvent: {}
+[0.000631] (crowd_statistics) JobQueued: {'identifier': 'crowd_statistics', 'dependencies': OrderedDict()}
+[0.001139] (crowd_statistics) JobStarted: {'identifier': 'crowd_statistics'}
+[0.020298] (crowd_statistics) JobProgress: {'identifier': 'crowd_statistics', 'progress': 'cmake'}
+[0.021854] (crowd_statistics) JobProgress: {'identifier': 'crowd_statistics', 'progress': 'build'}
+[0.023142] (crowd_statistics) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics', '--', '-j24', '-l24'], 'cwd': '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.11.3.6-1'), ('PANEL_BACK_CAMERA', '1'), ('NV_NVPROF_DEV_PACKAGE', 'cuda-nvprof-11-8=11.8.87-1'), ('ENABLE_GARBAGE_SEARCH_CLEANING', 'False'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '11.8.0-1'), ('HOSTNAME', 'tj2022-Default-string'), ('GIT_ASKPASS', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass.sh'), ('PANEL_FRONT_CAMERA', '0'), ('FRONT_DEPTH_CAMERA', '0'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/helpers/browser.sh'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.15.5-1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/map/dds.xml'), ('OLDPWD', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics'), ('NV_CUDNN_PACKAGE_NAME', 'libcudnn8'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('NV_LIBCUBLAS_DEV_VERSION', '11.11.3.6-1'), ('ENABLE_INSPECTION', 'False'), ('ROBOT_VERSION', 'cleaner'), ('VSCODE_IPC_HOOK_CLI', '/tmp/run/vscode-ipc-95b3220e-8152-4714-ac5c-ccf3e869c88f.sock'), ('PANEL_FRONT_CAMERA_FLIP', '1'), ('ROS_PYTHON_VERSION', '3'), ('USE_CURB_EXTRACTION', 'True'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/node'), ('ENABLE_AVOIDING_PEDESTRIANS_DETECTION', 'False'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.15.5-1'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-8=11.8.0.86-1'), ('REMOTE_CONTAINERS', 'true'), ('NV_CUDNN_PACKAGE', 'libcudnn8=8.9.6.50-1+cuda11.8'), ('CUDA_VERSION', '11.8.0'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install:/opt/ros/humble'), ('NV_NVPROF_VERSION', '11.8.87-1'), ('ROS_DISTRO', 'humble'), ('CAPELLA_ROS_HEADLESS', 'True'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-8'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.7.5.86-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,video,graphics,utility'), ('NV_CUDA_LIB_VERSION', '11.8.0-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.8.86-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-8=11.8.0.86-1'), ('TERM', 'xterm-256color'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('NV_CUDNN_PACKAGE_DEV', 'libcudnn8-dev=8.9.6.50-1+cuda11.8'), ('ROS_LOCALHOST_ONLY', '0'), ('CAMERAS', '[{"name":"rgb_camera_front", "config_file":"front.yaml"},{"name":"rgb_camera_right", "config_file":"right.yaml"}, {"name":"rgb_camera_back", "config_file":"back.yaml"},{"name":"rgb_camera_left", "config_file":"left.yaml"}]'), ('PATH', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/remote-cli:/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-8'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-8=11.11.3.6-1'), ('NVARCH', 'x86_64'), ('PANEL_FRONT_CAMERA_ROTATION', '0'), ('XDG_RUNTIME_DIR', '/tmp/run'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.7.5.86-1'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.15.5-1+cuda11.8'), ('IMAGE_VERSION', 'S1.1.0_4060'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-da0b57f224e5d000.txt'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/6b5397c6121a0411a7faf716aa6321a3/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '11.8.89-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('OUTDOOR_ROBOT_VERSION', 'outdoor_cleaner_3'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/run/vscode-git-85bf436c00.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock'), ('AMENT_PREFIX_PATH', '/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-8=11.11.3.6-1'), ('USE_AD_VIEWER_COUNT', 'False'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-11-8=11.8.0-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.15.5-1+cuda11.8'), ('ENABLE_FIRE_DETECTION', 'False'), ('NV_NVTX_VERSION', '11.8.86-1'), ('NV_LIBNPP_VERSION', '11.8.0.86-1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('ENABLE_VEHICLE_AVOIDANCE', 'False'), ('NV_CUDNN_VERSION', '8.9.6.50'), ('PWD', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics'), ('PYTHONPATH', '/usr/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/dist-packages:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.15.5-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.8.0.86-1'), ('CMAKE_PREFIX_PATH', '/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble')]), 'shell': False}
+[0.099479] (-) TimerEvent: {}
+[0.200405] (-) TimerEvent: {}
+[0.264727] (crowd_statistics) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o\x1b[0m\n'}
+[0.300678] (-) TimerEvent: {}
+[0.402141] (-) TimerEvent: {}
+[0.503289] (-) TimerEvent: {}
+[0.604250] (-) TimerEvent: {}
+[0.705201] (-) TimerEvent: {}
+[0.806204] (-) TimerEvent: {}
+[0.907353] (-) TimerEvent: {}
+[1.008095] (-) TimerEvent: {}
+[1.108980] (-) TimerEvent: {}
+[1.209766] (-) TimerEvent: {}
+[1.310624] (-) TimerEvent: {}
+[1.411327] (-) TimerEvent: {}
+[1.512758] (-) TimerEvent: {}
+[1.613724] (-) TimerEvent: {}
+[1.714615] (-) TimerEvent: {}
+[1.815614] (-) TimerEvent: {}
+[1.916721] (-) TimerEvent: {}
+[2.018108] (-) TimerEvent: {}
+[2.119489] (-) TimerEvent: {}
+[2.221630] (-) TimerEvent: {}
+[2.322724] (-) TimerEvent: {}
+[2.423734] (-) TimerEvent: {}
+[2.524754] (-) TimerEvent: {}
+[2.627561] (-) TimerEvent: {}
+[2.728733] (-) TimerEvent: {}
+[2.829892] (-) TimerEvent: {}
+[2.930880] (-) TimerEvent: {}
+[3.032244] (-) TimerEvent: {}
+[3.133262] (-) TimerEvent: {}
+[3.235071] (-) TimerEvent: {}
+[3.336027] (-) TimerEvent: {}
+[3.436897] (-) TimerEvent: {}
+[3.537996] (-) TimerEvent: {}
+[3.639142] (-) TimerEvent: {}
+[3.740096] (-) TimerEvent: {}
+[3.841214] (-) TimerEvent: {}
+[3.942141] (-) TimerEvent: {}
+[4.043319] (-) TimerEvent: {}
+[4.143994] (-) TimerEvent: {}
+[4.245078] (-) TimerEvent: {}
+[4.346678] (-) TimerEvent: {}
+[4.447235] (-) TimerEvent: {}
+[4.547866] (-) TimerEvent: {}
+[4.649402] (-) TimerEvent: {}
+[4.750364] (-) TimerEvent: {}
+[4.851069] (-) TimerEvent: {}
+[4.951495] (-) TimerEvent: {}
+[5.052199] (-) TimerEvent: {}
+[5.153075] (-) TimerEvent: {}
+[5.254305] (-) TimerEvent: {}
+[5.355510] (-) TimerEvent: {}
+[5.456236] (-) TimerEvent: {}
+[5.558172] (-) TimerEvent: {}
+[5.659019] (-) TimerEvent: {}
+[5.759976] (-) TimerEvent: {}
+[5.860877] (-) TimerEvent: {}
+[5.905203] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[5.905747] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:124:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcv::String\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.905838] (crowd_statistics) StderrLine: {'line': b'  124 |   rclcpp::Publisher<std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K>::SharedPtr stats_pub_;  // \xe6\x88\x96\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe6\xb6\x88\xe6\x81\xaf\n'}
+[5.905905] (crowd_statistics) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[5.905963] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/base.hpp:58\x1b[m\x1b[K,\n'}
+[5.906022] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core.hpp:53\x1b[m\x1b[K,\n'}
+[5.906078] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[5.906133] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[5.906196] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:17\x1b[m\x1b[K,\n'}
+[5.906253] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[5.906332] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/cvstd.hpp:152:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::String\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[5.906397] (crowd_statistics) StderrLine: {'line': b'  152 | typedef std::string \x1b[01;36m\x1b[KString\x1b[m\x1b[K;\n'}
+[5.906459] (crowd_statistics) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[5.906514] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[5.906593] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:124:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[5.906677] (crowd_statistics) StderrLine: {'line': b'  124 |   rclcpp::Publisher<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr stats_pub_;  // \xe6\x88\x96\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe6\xb6\x88\xe6\x81\xaf\n'}
+[5.906770] (crowd_statistics) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.906862] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:124:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[5.906958] (crowd_statistics) StderrLine: {'line': b'  124 |   rclcpp::Publisher<std_msgs::msg::String>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K stats_pub_;  // \xe6\x88\x96\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe6\xb6\x88\xe6\x81\xaf\n'}
+[5.907049] (crowd_statistics) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.907143] (crowd_statistics) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[5.909994] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:124:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstats_pub_\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.910246] (crowd_statistics) StderrLine: {'line': b'  124 |   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Kstats_pub_\x1b[m\x1b[K;  // \xe6\x88\x96\xe8\x87\xaa\xe5\xae\x9a\xe4\xb9\x89\xe6\xb6\x88\xe6\x81\xaf\n'}
+[5.910310] (crowd_statistics) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.961127] (-) TimerEvent: {}
+[6.062066] (-) TimerEvent: {}
+[6.162706] (-) TimerEvent: {}
+[6.199831] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kcrowd_statistics::CrowdStatisticsNode::CrowdStatisticsNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.200614] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:201:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstats_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstats_mutex_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.201142] (crowd_statistics) StderrLine: {'line': b'  201 |   \x1b[01;31m\x1b[Kstats_pub_\x1b[m\x1b[K = this->create_publisher<std_msgs::msg::String>(\n'}
+[6.201311] (crowd_statistics) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.201472] (crowd_statistics) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kstats_mutex_\x1b[m\x1b[K\n'}
+[6.202283] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:201:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcv::String\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.202714] (crowd_statistics) StderrLine: {'line': b'  201 |   stats_pub_ = this->create_publisher<std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K>(\n'}
+[6.203037] (crowd_statistics) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.203246] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/base.hpp:58\x1b[m\x1b[K,\n'}
+[6.203417] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core.hpp:53\x1b[m\x1b[K,\n'}
+[6.203584] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[6.203742] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[6.203890] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:17\x1b[m\x1b[K,\n'}
+[6.204037] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.204179] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/cvstd.hpp:152:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::String\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.204331] (crowd_statistics) StderrLine: {'line': b'  152 | typedef std::string \x1b[01;36m\x1b[KString\x1b[m\x1b[K;\n'}
+[6.204476] (crowd_statistics) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.204637] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:201:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcrowd_statistics::CrowdStatisticsNode::create_publisher<<expression error> >(const char [24], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.204799] (crowd_statistics) StderrLine: {'line': b'  201 |   stats_pub_ = \x1b[01;31m\x1b[Kthis->create_publisher<std_msgs::msg::String>(\x1b[m\x1b[K\n'}
+[6.204948] (crowd_statistics) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[6.205100] (crowd_statistics) StderrLine: {'line': b'  202 | \x1b[01;31m\x1b[K      "/crowd_statistics/stats", 10)\x1b[m\x1b[K;\n'}
+[6.205261] (crowd_statistics) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                         \n'}
+[6.205423] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321\x1b[m\x1b[K,\n'}
+[6.205646] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[6.205832] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[6.206000] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.206180] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:10\x1b[m\x1b[K,\n'}
+[6.206345] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.206526] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.206794] (crowd_statistics) StderrLine: {'line': b'   73 | \x1b[01;36m\x1b[KNode\x1b[m\x1b[K::create_publisher(\n'}
+[6.206964] (crowd_statistics) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.207123] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.207297] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:201:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.207462] (crowd_statistics) StderrLine: {'line': b'  201 |   stats_pub_ = \x1b[01;31m\x1b[Kthis->create_publisher<std_msgs::msg::String>(\x1b[m\x1b[K\n'}
+[6.207643] (crowd_statistics) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[6.207820] (crowd_statistics) StderrLine: {'line': b'  202 | \x1b[01;31m\x1b[K      "/crowd_statistics/stats", 10)\x1b[m\x1b[K;\n'}
+[6.207982] (crowd_statistics) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K                         \n'}
+[6.262899] (-) TimerEvent: {}
+[6.276077] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid crowd_statistics::CrowdStatisticsNode::publishStats(const crowd_statistics::CrowdStats&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.277009] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:453:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KString\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcv::String\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.277325] (crowd_statistics) StderrLine: {'line': b'  453 |   std_msgs::msg::\x1b[01;31m\x1b[KString\x1b[m\x1b[K msg;\n'}
+[6.277505] (crowd_statistics) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.277864] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/base.hpp:58\x1b[m\x1b[K,\n'}
+[6.278050] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core.hpp:53\x1b[m\x1b[K,\n'}
+[6.278290] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/core.hpp:48\x1b[m\x1b[K,\n'}
+[6.279135] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43\x1b[m\x1b[K,\n'}
+[6.279279] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:17\x1b[m\x1b[K,\n'}
+[6.279359] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.279428] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/opencv4/opencv2/core/cvstd.hpp:152:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::String\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.279498] (crowd_statistics) StderrLine: {'line': b'  152 | typedef std::string \x1b[01;36m\x1b[KString\x1b[m\x1b[K;\n'}
+[6.279581] (crowd_statistics) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.279651] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:456:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst class rclcpp::Time\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Ksec\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.279724] (crowd_statistics) StderrLine: {'line': b'  456 |   ss << "timestamp: " << stats.stamp.\x1b[01;31m\x1b[Ksec\x1b[m\x1b[K << "." << stats.stamp.nanosec\n'}
+[6.279789] (crowd_statistics) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.279854] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:456:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst class rclcpp::Time\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Knanosec\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Knanoseconds\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.279929] (crowd_statistics) StderrLine: {'line': b'  456 |   ss << "timestamp: " << stats.stamp.sec << "." << stats.stamp.\x1b[01;31m\x1b[Knanosec\x1b[m\x1b[K\n'}
+[6.279995] (crowd_statistics) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.280059] (crowd_statistics) StderrLine: {'line': b'      |                                                                \x1b[32m\x1b[Knanoseconds\x1b[m\x1b[K\n'}
+[6.280122] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:460:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.280188] (crowd_statistics) StderrLine: {'line': b'  460 |   \x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K.data = ss.str();\n'}
+[6.280251] (crowd_statistics) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.280313] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:460:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[6.280375] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7\x1b[m\x1b[K,\n'}
+[6.280438] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20\x1b[m\x1b[K,\n'}
+[6.280502] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[6.280586] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32\x1b[m\x1b[K,\n'}
+[6.280653] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42\x1b[m\x1b[K,\n'}
+[6.280716] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[6.280778] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.280844] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.280908] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.280971] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.281032] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.281096] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.281159] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.281225] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.281287] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:10\x1b[m\x1b[K,\n'}
+[6.281353] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.281416] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbuiltin_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.281488] (crowd_statistics) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[6.281560] (crowd_statistics) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.281635] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7\x1b[m\x1b[K,\n'}
+[6.281700] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28\x1b[m\x1b[K,\n'}
+[6.281766] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30\x1b[m\x1b[K,\n'}
+[6.281830] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45\x1b[m\x1b[K,\n'}
+[6.281892] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[6.281957] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.282019] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.282088] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.282152] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.282214] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.282278] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.282341] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.282404] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:10\x1b[m\x1b[K,\n'}
+[6.282468] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.282533] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Krcl_interfaces::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.282610] (crowd_statistics) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[6.282674] (crowd_statistics) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.282737] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23\x1b[m\x1b[K,\n'}
+[6.282804] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7\x1b[m\x1b[K,\n'}
+[6.282867] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21\x1b[m\x1b[K,\n'}
+[6.282932] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[6.282995] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[6.283058] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[6.283124] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[6.283188] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.283252] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.283314] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[6.283376] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[6.283439] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.283503] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[6.283577] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:10\x1b[m\x1b[K,\n'}
+[6.283642] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.283705] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstatistics_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.283769] (crowd_statistics) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[6.283832] (crowd_statistics) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.283895] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:20\x1b[m\x1b[K,\n'}
+[6.283963] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp:7\x1b[m\x1b[K,\n'}
+[6.284030] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:11\x1b[m\x1b[K,\n'}
+[6.284097] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.284159] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.284226] (crowd_statistics) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[6.284290] (crowd_statistics) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.284354] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/compressed_image.hpp:7\x1b[m\x1b[K,\n'}
+[6.284421] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:11\x1b[m\x1b[K,\n'}
+[6.284496] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.284583] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.284660] (crowd_statistics) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[6.284730] (crowd_statistics) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.284799] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp:22\x1b[m\x1b[K,\n'}
+[6.284869] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[6.284941] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:14\x1b[m\x1b[K,\n'}
+[6.285024] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.285203] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.285282] (crowd_statistics) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[6.285349] (crowd_statistics) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.285416] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__struct.hpp:35\x1b[m\x1b[K,\n'}
+[6.285485] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp:20\x1b[m\x1b[K,\n'}
+[6.285707] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker_array.hpp:7\x1b[m\x1b[K,\n'}
+[6.285800] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:16\x1b[m\x1b[K,\n'}
+[6.285868] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.285933] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__struct.hpp:27:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kvisualization_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.285997] (crowd_statistics) StderrLine: {'line': b'   27 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[6.286060] (crowd_statistics) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.286123] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:7\x1b[m\x1b[K,\n'}
+[6.286187] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp:44\x1b[m\x1b[K,\n'}
+[6.286253] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:35\x1b[m\x1b[K,\n'}
+[6.286317] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:19\x1b[m\x1b[K,\n'}
+[6.286381] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[6.286447] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:31:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ktf2_msgs::msg\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.286515] (crowd_statistics) StderrLine: {'line': b'   31 | namespace \x1b[01;36m\x1b[Kmsg\x1b[m\x1b[K\n'}
+[6.286592] (crowd_statistics) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.293389] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:461:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstats_pub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstats_mutex_\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.293933] (crowd_statistics) StderrLine: {'line': b'  461 |   \x1b[01;31m\x1b[Kstats_pub_\x1b[m\x1b[K->publish(msg);\n'}
+[6.294018] (crowd_statistics) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.294079] (crowd_statistics) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kstats_mutex_\x1b[m\x1b[K\n'}
+[6.362992] (-) TimerEvent: {}
+[6.463470] (-) TimerEvent: {}
+[6.564017] (-) TimerEvent: {}
+[6.664517] (-) TimerEvent: {}
+[6.765711] (-) TimerEvent: {}
+[6.866634] (-) TimerEvent: {}
+[6.967717] (-) TimerEvent: {}
+[7.068753] (-) TimerEvent: {}
+[7.169555] (-) TimerEvent: {}
+[7.270185] (-) TimerEvent: {}
+[7.370815] (-) TimerEvent: {}
+[7.471428] (-) TimerEvent: {}
+[7.572277] (-) TimerEvent: {}
+[7.672807] (-) TimerEvent: {}
+[7.773343] (-) TimerEvent: {}
+[7.873980] (-) TimerEvent: {}
+[7.974938] (-) TimerEvent: {}
+[8.075437] (-) TimerEvent: {}
+[8.176136] (-) TimerEvent: {}
+[8.276921] (-) TimerEvent: {}
+[8.378427] (-) TimerEvent: {}
+[8.479222] (-) TimerEvent: {}
+[8.579871] (-) TimerEvent: {}
+[8.680472] (-) TimerEvent: {}
+[8.781175] (-) TimerEvent: {}
+[8.882225] (-) TimerEvent: {}
+[8.982863] (-) TimerEvent: {}
+[9.083483] (-) TimerEvent: {}
+[9.183985] (-) TimerEvent: {}
+[9.284617] (-) TimerEvent: {}
+[9.385234] (-) TimerEvent: {}
+[9.485757] (-) TimerEvent: {}
+[9.586369] (-) TimerEvent: {}
+[9.686829] (-) TimerEvent: {}
+[9.787380] (-) TimerEvent: {}
+[9.887914] (-) TimerEvent: {}
+[9.988520] (-) TimerEvent: {}
+[10.089172] (-) TimerEvent: {}
+[10.189779] (-) TimerEvent: {}
+[10.290416] (-) TimerEvent: {}
+[10.391200] (-) TimerEvent: {}
+[10.491720] (-) TimerEvent: {}
+[10.592130] (-) TimerEvent: {}
+[10.692939] (-) TimerEvent: {}
+[10.793744] (-) TimerEvent: {}
+[10.894825] (-) TimerEvent: {}
+[10.996235] (-) TimerEvent: {}
+[11.097315] (-) TimerEvent: {}
+[11.198379] (-) TimerEvent: {}
+[11.299253] (-) TimerEvent: {}
+[11.400021] (-) TimerEvent: {}
+[11.500823] (-) TimerEvent: {}
+[11.601534] (-) TimerEvent: {}
+[11.702585] (-) TimerEvent: {}
+[11.803396] (-) TimerEvent: {}
+[11.904006] (-) TimerEvent: {}
+[12.004814] (-) TimerEvent: {}
+[12.105786] (-) TimerEvent: {}
+[12.206822] (-) TimerEvent: {}
+[12.307849] (-) TimerEvent: {}
+[12.408676] (-) TimerEvent: {}
+[12.509683] (-) TimerEvent: {}
+[12.610695] (-) TimerEvent: {}
+[12.711671] (-) TimerEvent: {}
+[12.812313] (-) TimerEvent: {}
+[12.913328] (-) TimerEvent: {}
+[13.014269] (-) TimerEvent: {}
+[13.115198] (-) TimerEvent: {}
+[13.216293] (-) TimerEvent: {}
+[13.280809] (crowd_statistics) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/crowd_statistics_node.dir/build.make:79: CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o] Error 1\n'}
+[13.281400] (crowd_statistics) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/crowd_statistics_node.dir/all] Error 2\n'}
+[13.281830] (crowd_statistics) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.285088] (crowd_statistics) CommandEnded: {'returncode': 2}
+[13.300809] (crowd_statistics) JobEnded: {'identifier': 'crowd_statistics', 'rc': 2}
+[13.312472] (-) EventReactorShutdown: {}

@@ -1,0 +1,47 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o[0m
+In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+                 from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+                 from [01m[K/usr/include/c++/11/memory:64[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:4[m[K,
+                 from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+/usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = crowd_statistics::CameraInfo; _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo][m[K’:
+[01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = crowd_statistics::CameraInfo; _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<crowd_statistics::CameraInfo>][m[K’
+[01m[K/usr/include/c++/11/bits/vector.tcc:115:30:[m[K   required from ‘[01m[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::reference = crowd_statistics::CameraInfo&][m[K’
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1204:21:[m[K   required from ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::value_type = crowd_statistics::CameraInfo][m[K’
+[01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:195:23:[m[K   required from here
+[01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kcrowd_statistics::CameraInfo::CameraInfo(crowd_statistics::CameraInfo&&)[m[K’
+  162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:46:8:[m[K [01;36m[Knote: [m[K‘[01m[Kcrowd_statistics::CameraInfo::CameraInfo(crowd_statistics::CameraInfo&&)[m[K’ is implicitly deleted because the default definition would be ill-formed:
+   46 | struct [01;36m[KCameraInfo[m[K
+      |        [01;36m[K^~~~~~~~~~[m[K
+[01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:46:8:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::mutex::mutex(const std::mutex&)[m[K’
+In file included from [01m[K/usr/include/c++/11/mutex:43[m[K,
+                 from [01m[K/usr/include/c++/11/future:38[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:4[m[K,
+                 from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/std_mutex.h:94:5:[m[K [01;36m[Knote: [m[Kdeclared here
+   94 |     [01;36m[Kmutex[m[K(const mutex&) = delete;
+      |     [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/memory:66[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:4[m[K,
+                 from [01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1[m[K:
+/usr/include/c++/11/bits/stl_uninitialized.h: In instantiation of ‘[01m[K_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<crowd_statistics::CameraInfo*>; _ForwardIterator = crowd_statistics::CameraInfo*][m[K’:
+[01m[K/usr/include/c++/11/bits/stl_uninitialized.h:333:37:[m[K   required from ‘[01m[K_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<crowd_statistics::CameraInfo*>; _ForwardIterator = crowd_statistics::CameraInfo*; _Tp = crowd_statistics::CameraInfo][m[K’
+[01m[K/usr/include/c++/11/bits/stl_uninitialized.h:355:2:[m[K   required from ‘[01m[K_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = crowd_statistics::CameraInfo*; _ForwardIterator = crowd_statistics::CameraInfo*; _Allocator = std::allocator<crowd_statistics::CameraInfo>][m[K’
+[01m[K/usr/include/c++/11/bits/vector.tcc:474:3:[m[K   required from ‘[01m[Kvoid std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::iterator = std::vector<crowd_statistics::CameraInfo>::iterator][m[K’
+[01m[K/usr/include/c++/11/bits/vector.tcc:121:21:[m[K   required from ‘[01m[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::reference = crowd_statistics::CameraInfo&][m[K’
+[01m[K/usr/include/c++/11/bits/stl_vector.h:1204:21:[m[K   required from ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::value_type = crowd_statistics::CameraInfo][m[K’
+[01m[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:195:23:[m[K   required from here
+[01m[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: result type must be constructible from value type of input range
+  138 |       static_assert(is_constructible<_ValueType2, decltype(*__first)>::[01;31m[Kvalue[m[K,
+      |                                                                        [01;31m[K^~~~~[m[K
+[01m[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::integral_constant<bool, false>::value[m[K’ evaluates to false
+gmake[2]: *** [CMakeFiles/crowd_statistics_node.dir/build.make:79: CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/crowd_statistics_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

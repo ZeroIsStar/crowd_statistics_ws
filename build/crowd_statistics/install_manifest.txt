@@ -1,0 +1,16 @@
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/lib/crowd_statistics/crowd_statistics_node
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/ament_index/resource_index/package_run_dependencies/crowd_statistics
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/ament_index/resource_index/parent_prefix_path/crowd_statistics
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/ament_prefix_path.sh
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/ament_prefix_path.dsv
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/path.sh
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/path.dsv
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.bash
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.sh
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.zsh
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.dsv
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/package.dsv
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/ament_index/resource_index/packages/crowd_statistics
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/cmake/crowd_statisticsConfig.cmake
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/cmake/crowd_statisticsConfig-version.cmake
+/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/package.xml

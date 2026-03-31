@@ -1,0 +1,8 @@
+source;share/crowd_statistics/hook/cmake_prefix_path.ps1
+source;share/crowd_statistics/hook/cmake_prefix_path.dsv
+source;share/crowd_statistics/hook/cmake_prefix_path.sh
+source;share/crowd_statistics/local_setup.bash
+source;share/crowd_statistics/local_setup.dsv
+source;share/crowd_statistics/local_setup.ps1
+source;share/crowd_statistics/local_setup.sh
+source;share/crowd_statistics/local_setup.zsh

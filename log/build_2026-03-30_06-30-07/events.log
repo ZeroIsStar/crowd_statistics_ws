@@ -1,0 +1,218 @@
+[0.000000] (-) TimerEvent: {}
+[0.002602] (crowd_statistics) JobQueued: {'identifier': 'crowd_statistics', 'dependencies': OrderedDict()}
+[0.003134] (crowd_statistics) JobStarted: {'identifier': 'crowd_statistics'}
+[0.046685] (crowd_statistics) JobProgress: {'identifier': 'crowd_statistics', 'progress': 'cmake'}
+[0.049070] (crowd_statistics) JobProgress: {'identifier': 'crowd_statistics', 'progress': 'build'}
+[0.050797] (crowd_statistics) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics', '--', '-j24', '-l24'], 'cwd': '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.11.3.6-1'), ('PANEL_BACK_CAMERA', '1'), ('NV_NVPROF_DEV_PACKAGE', 'cuda-nvprof-11-8=11.8.87-1'), ('ENABLE_GARBAGE_SEARCH_CLEANING', 'False'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-8'), ('NV_CUDA_NSIGHT_COMPUTE_VERSION', '11.8.0-1'), ('HOSTNAME', 'tj2022-Default-string'), ('GIT_ASKPASS', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass.sh'), ('PANEL_FRONT_CAMERA', '0'), ('FRONT_DEPTH_CAMERA', '0'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/helpers/browser.sh'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.15.5-1'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/root'), ('CYCLONEDDS_URI', '/map/dds.xml'), ('OLDPWD', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics'), ('NV_CUDNN_PACKAGE_NAME', 'libcudnn8'), ('TERM_PROGRAM_VERSION', '1.109.0'), ('NV_LIBCUBLAS_DEV_VERSION', '11.11.3.6-1'), ('ENABLE_INSPECTION', 'False'), ('ROBOT_VERSION', 'cleaner'), ('VSCODE_IPC_HOOK_CLI', '/tmp/run/vscode-ipc-95b3220e-8152-4714-ac5c-ccf3e869c88f.sock'), ('PANEL_FRONT_CAMERA_FLIP', '1'), ('ROS_PYTHON_VERSION', '3'), ('USE_CURB_EXTRACTION', 'True'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/node'), ('ENABLE_AVOIDING_PEDESTRIANS_DETECTION', 'False'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.15.5-1'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-8=11.8.0.86-1'), ('REMOTE_CONTAINERS', 'true'), ('NV_CUDNN_PACKAGE', 'libcudnn8=8.9.6.50-1+cuda11.8'), ('CUDA_VERSION', '11.8.0'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install:/opt/ros/humble'), ('NV_NVPROF_VERSION', '11.8.87-1'), ('ROS_DISTRO', 'humble'), ('CAPELLA_ROS_HEADLESS', 'True'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-8'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.8 brand=tesla,driver>=470,driver<471 brand=unknown,driver>=470,driver<471 brand=nvidia,driver>=470,driver<471 brand=nvidiartx,driver>=470,driver<471 brand=geforce,driver>=470,driver<471 brand=geforcertx,driver>=470,driver<471 brand=quadro,driver>=470,driver<471 brand=quadrortx,driver>=470,driver<471 brand=titan,driver>=470,driver<471 brand=titanrtx,driver>=470,driver<471'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.7.5.86-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,video,graphics,utility'), ('NV_CUDA_LIB_VERSION', '11.8.0-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.8.86-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-8=11.8.0.86-1'), ('TERM', 'xterm-256color'), ('NV_CUDA_CUDART_VERSION', '11.8.89-1'), ('NV_CUDNN_PACKAGE_DEV', 'libcudnn8-dev=8.9.6.50-1+cuda11.8'), ('ROS_LOCALHOST_ONLY', '0'), ('CAMERAS', '[{"name":"rgb_camera_front", "config_file":"front.yaml"},{"name":"rgb_camera_right", "config_file":"right.yaml"}, {"name":"rgb_camera_back", "config_file":"back.yaml"},{"name":"rgb_camera_left", "config_file":"left.yaml"}]'), ('PATH', '/root/.vscode-server/bin/bdd88df003631aaa0bcbe057cb0a940b80a476fa/bin/remote-cli:/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-8'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-8=11.11.3.6-1'), ('NVARCH', 'x86_64'), ('PANEL_FRONT_CAMERA_ROTATION', '0'), ('XDG_RUNTIME_DIR', '/tmp/run'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.7.5.86-1'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock","/root/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.15.5-1+cuda11.8'), ('IMAGE_VERSION', 'S1.1.0_4060'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-da0b57f224e5d000.txt'), ('NVIDIA_PRODUCT_NAME', 'CUDA'), ('LANG', 'en_US.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/6b5397c6121a0411a7faf716aa6321a3/ms-python.python/pythonrc.py'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('NV_CUDA_CUDART_DEV_VERSION', '11.8.89-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('OUTDOOR_ROBOT_VERSION', 'outdoor_cleaner_3'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/run/vscode-git-85bf436c00.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-ecb81a2c-ea59-433b-a178-b896c6fe2a9a.sock'), ('AMENT_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-8=11.11.3.6-1'), ('USE_AD_VIEWER_COUNT', 'False'), ('NV_CUDA_NSIGHT_COMPUTE_DEV_PACKAGE', 'cuda-nsight-compute-11-8=11.8.0-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.15.5-1+cuda11.8'), ('ENABLE_FIRE_DETECTION', 'False'), ('NV_NVTX_VERSION', '11.8.86-1'), ('NV_LIBNPP_VERSION', '11.8.0.86-1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('ENABLE_VEHICLE_AVOIDANCE', 'False'), ('NV_CUDNN_VERSION', '8.9.6.50'), ('PWD', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics'), ('PYTHONPATH', '/usr/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/dist-packages:/usr/local/lib/python3.10/dist-packages:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.15.5-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.8.0.86-1'), ('CMAKE_PREFIX_PATH', '/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble')]), 'shell': False}
+[0.098668] (-) TimerEvent: {}
+[0.199898] (-) TimerEvent: {}
+[0.301283] (-) TimerEvent: {}
+[0.364103] (crowd_statistics) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o\x1b[0m\n'}
+[0.401558] (-) TimerEvent: {}
+[0.502772] (-) TimerEvent: {}
+[0.603929] (-) TimerEvent: {}
+[0.705629] (-) TimerEvent: {}
+[0.806956] (-) TimerEvent: {}
+[0.908261] (-) TimerEvent: {}
+[1.009497] (-) TimerEvent: {}
+[1.110291] (-) TimerEvent: {}
+[1.211059] (-) TimerEvent: {}
+[1.312192] (-) TimerEvent: {}
+[1.413195] (-) TimerEvent: {}
+[1.514340] (-) TimerEvent: {}
+[1.615415] (-) TimerEvent: {}
+[1.715802] (-) TimerEvent: {}
+[1.816208] (-) TimerEvent: {}
+[1.916918] (-) TimerEvent: {}
+[2.017606] (-) TimerEvent: {}
+[2.118400] (-) TimerEvent: {}
+[2.220017] (-) TimerEvent: {}
+[2.320862] (-) TimerEvent: {}
+[2.421949] (-) TimerEvent: {}
+[2.526607] (-) TimerEvent: {}
+[2.627504] (-) TimerEvent: {}
+[2.729162] (-) TimerEvent: {}
+[2.831909] (-) TimerEvent: {}
+[2.932638] (-) TimerEvent: {}
+[3.033399] (-) TimerEvent: {}
+[3.134254] (-) TimerEvent: {}
+[3.236324] (-) TimerEvent: {}
+[3.337424] (-) TimerEvent: {}
+[3.438157] (-) TimerEvent: {}
+[3.538789] (-) TimerEvent: {}
+[3.643709] (-) TimerEvent: {}
+[3.745779] (-) TimerEvent: {}
+[3.847057] (-) TimerEvent: {}
+[3.948054] (-) TimerEvent: {}
+[4.049826] (-) TimerEvent: {}
+[4.150761] (-) TimerEvent: {}
+[4.251944] (-) TimerEvent: {}
+[4.352911] (-) TimerEvent: {}
+[4.453586] (-) TimerEvent: {}
+[4.554677] (-) TimerEvent: {}
+[4.657320] (-) TimerEvent: {}
+[4.757982] (-) TimerEvent: {}
+[4.858758] (-) TimerEvent: {}
+[4.959496] (-) TimerEvent: {}
+[5.060179] (-) TimerEvent: {}
+[5.160884] (-) TimerEvent: {}
+[5.261664] (-) TimerEvent: {}
+[5.362591] (-) TimerEvent: {}
+[5.463346] (-) TimerEvent: {}
+[5.564898] (-) TimerEvent: {}
+[5.665527] (-) TimerEvent: {}
+[5.766347] (-) TimerEvent: {}
+[5.867536] (-) TimerEvent: {}
+[5.968107] (-) TimerEvent: {}
+[6.068877] (-) TimerEvent: {}
+[6.169860] (-) TimerEvent: {}
+[6.270981] (-) TimerEvent: {}
+[6.372024] (-) TimerEvent: {}
+[6.473004] (-) TimerEvent: {}
+[6.574227] (-) TimerEvent: {}
+[6.675061] (-) TimerEvent: {}
+[6.775737] (-) TimerEvent: {}
+[6.876139] (-) TimerEvent: {}
+[6.977000] (-) TimerEvent: {}
+[7.077981] (-) TimerEvent: {}
+[7.178694] (-) TimerEvent: {}
+[7.279331] (-) TimerEvent: {}
+[7.381697] (-) TimerEvent: {}
+[7.483903] (-) TimerEvent: {}
+[7.590630] (-) TimerEvent: {}
+[7.691955] (-) TimerEvent: {}
+[7.793196] (-) TimerEvent: {}
+[7.894433] (-) TimerEvent: {}
+[7.995579] (-) TimerEvent: {}
+[8.099249] (-) TimerEvent: {}
+[8.200431] (-) TimerEvent: {}
+[8.301830] (-) TimerEvent: {}
+[8.406031] (-) TimerEvent: {}
+[8.506958] (-) TimerEvent: {}
+[8.609818] (-) TimerEvent: {}
+[8.710784] (-) TimerEvent: {}
+[8.812393] (-) TimerEvent: {}
+[8.913295] (-) TimerEvent: {}
+[9.014308] (-) TimerEvent: {}
+[9.115683] (-) TimerEvent: {}
+[9.216671] (-) TimerEvent: {}
+[9.317478] (-) TimerEvent: {}
+[9.418171] (-) TimerEvent: {}
+[9.519011] (-) TimerEvent: {}
+[9.620321] (-) TimerEvent: {}
+[9.692361] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[9.693173] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[9.693311] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[9.693447] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[9.693531] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:4\x1b[m\x1b[K,\n'}
+[9.693626] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[9.693706] (crowd_statistics) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = crowd_statistics::CameraInfo; _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.693819] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = crowd_statistics::CameraInfo; _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<crowd_statistics::CameraInfo>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.694003] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:115:30:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::reference = crowd_statistics::CameraInfo&]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.694094] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1204:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::value_type = crowd_statistics::CameraInfo]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.694179] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:195:23:\x1b[m\x1b[K   required from here\n'}
+[9.694262] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Kcrowd_statistics::CameraInfo::CameraInfo(crowd_statistics::CameraInfo&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.694344] (crowd_statistics) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[9.694431] (crowd_statistics) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.694509] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[9.694590] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:46:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcrowd_statistics::CameraInfo::CameraInfo(crowd_statistics::CameraInfo&&)\x1b[m\x1b[K\xe2\x80\x99 is implicitly deleted because the default definition would be ill-formed:\n'}
+[9.694684] (crowd_statistics) StderrLine: {'line': b'   46 | struct \x1b[01;36m\x1b[KCameraInfo\x1b[m\x1b[K\n'}
+[9.694778] (crowd_statistics) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.694861] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:46:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Kstd::mutex::mutex(const std::mutex&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[9.694969] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/mutex:43\x1b[m\x1b[K,\n'}
+[9.695063] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/future:38\x1b[m\x1b[K,\n'}
+[9.695460] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:18\x1b[m\x1b[K,\n'}
+[9.695557] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[9.695645] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:4\x1b[m\x1b[K,\n'}
+[9.695737] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[9.695831] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/std_mutex.h:94:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.695925] (crowd_statistics) StderrLine: {'line': b'   94 |     \x1b[01;36m\x1b[Kmutex\x1b[m\x1b[K(const mutex&) = delete;\n'}
+[9.696003] (crowd_statistics) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[9.720465] (-) TimerEvent: {}
+[9.821905] (-) TimerEvent: {}
+[9.925185] (-) TimerEvent: {}
+[10.026182] (-) TimerEvent: {}
+[10.127236] (-) TimerEvent: {}
+[10.229626] (-) TimerEvent: {}
+[10.331459] (-) TimerEvent: {}
+[10.433847] (-) TimerEvent: {}
+[10.535443] (-) TimerEvent: {}
+[10.641962] (-) TimerEvent: {}
+[10.745266] (-) TimerEvent: {}
+[10.846423] (-) TimerEvent: {}
+[10.947660] (-) TimerEvent: {}
+[11.048834] (-) TimerEvent: {}
+[11.149747] (-) TimerEvent: {}
+[11.251256] (-) TimerEvent: {}
+[11.352197] (-) TimerEvent: {}
+[11.452929] (-) TimerEvent: {}
+[11.553664] (-) TimerEvent: {}
+[11.654536] (-) TimerEvent: {}
+[11.755469] (-) TimerEvent: {}
+[11.856290] (-) TimerEvent: {}
+[11.964120] (-) TimerEvent: {}
+[11.979401] (crowd_statistics) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:66\x1b[m\x1b[K,\n'}
+[11.980249] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[11.980437] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/include/crowd_statistics/crowd_statistics.hpp:4\x1b[m\x1b[K,\n'}
+[11.980598] (crowd_statistics) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:1\x1b[m\x1b[K:\n'}
+[11.980769] (crowd_statistics) StderrLine: {'line': b'/usr/include/c++/11/bits/stl_uninitialized.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<crowd_statistics::CameraInfo*>; _ForwardIterator = crowd_statistics::CameraInfo*]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.980941] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:333:37:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<crowd_statistics::CameraInfo*>; _ForwardIterator = crowd_statistics::CameraInfo*; _Tp = crowd_statistics::CameraInfo]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.981145] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:355:2:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[K_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = crowd_statistics::CameraInfo*; _ForwardIterator = crowd_statistics::CameraInfo*; _Allocator = std::allocator<crowd_statistics::CameraInfo>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.981295] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:474:3:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::iterator = std::vector<crowd_statistics::CameraInfo>::iterator]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.981444] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:121:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {crowd_statistics::CameraInfo}; _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::reference = crowd_statistics::CameraInfo&]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.981588] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:1204:21:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = crowd_statistics::CameraInfo; _Alloc = std::allocator<crowd_statistics::CameraInfo>; std::vector<_Tp, _Alloc>::value_type = crowd_statistics::CameraInfo]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.984863] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/capella/lib/python3.10/site-packages/crowd_statistics_ws/src/crowd_statistics/src/crowd_statistics.cpp:195:23:\x1b[m\x1b[K   required from here\n'}
+[11.985162] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kstatic assertion failed: result type must be constructible from value type of input range\n'}
+[11.985313] (crowd_statistics) StderrLine: {'line': b'  138 |       static_assert(is_constructible<_ValueType2, decltype(*__first)>::\x1b[01;31m\x1b[Kvalue\x1b[m\x1b[K,\n'}
+[11.985480] (crowd_statistics) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.985620] (crowd_statistics) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_uninitialized.h:138:72:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::integral_constant<bool, false>::value\x1b[m\x1b[K\xe2\x80\x99 evaluates to false\n'}
+[12.064459] (-) TimerEvent: {}
+[12.165633] (-) TimerEvent: {}
+[12.266869] (-) TimerEvent: {}
+[12.367444] (-) TimerEvent: {}
+[12.468268] (-) TimerEvent: {}
+[12.569661] (-) TimerEvent: {}
+[12.670895] (-) TimerEvent: {}
+[12.771490] (-) TimerEvent: {}
+[12.872266] (-) TimerEvent: {}
+[12.974148] (-) TimerEvent: {}
+[13.074889] (-) TimerEvent: {}
+[13.175572] (-) TimerEvent: {}
+[13.276466] (-) TimerEvent: {}
+[13.377426] (-) TimerEvent: {}
+[13.481119] (-) TimerEvent: {}
+[13.582174] (-) TimerEvent: {}
+[13.684016] (-) TimerEvent: {}
+[13.787012] (-) TimerEvent: {}
+[13.887935] (-) TimerEvent: {}
+[13.988748] (-) TimerEvent: {}
+[14.089344] (-) TimerEvent: {}
+[14.189992] (-) TimerEvent: {}
+[14.291002] (-) TimerEvent: {}
+[14.391935] (-) TimerEvent: {}
+[14.492772] (-) TimerEvent: {}
+[14.593569] (-) TimerEvent: {}
+[14.694637] (-) TimerEvent: {}
+[14.795497] (-) TimerEvent: {}
+[14.896464] (-) TimerEvent: {}
+[14.997524] (-) TimerEvent: {}
+[15.098491] (-) TimerEvent: {}
+[15.199111] (-) TimerEvent: {}
+[15.299921] (-) TimerEvent: {}
+[15.402294] (-) TimerEvent: {}
+[15.504036] (-) TimerEvent: {}
+[15.611445] (-) TimerEvent: {}
+[15.715019] (-) TimerEvent: {}
+[15.816165] (-) TimerEvent: {}
+[15.918061] (-) TimerEvent: {}
+[16.023940] (-) TimerEvent: {}
+[16.125238] (-) TimerEvent: {}
+[16.226203] (-) TimerEvent: {}
+[16.328345] (-) TimerEvent: {}
+[16.396409] (crowd_statistics) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/crowd_statistics_node.dir/build.make:79: CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o] Error 1\n'}
+[16.397732] (crowd_statistics) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:153: CMakeFiles/crowd_statistics_node.dir/all] Error 2\n'}
+[16.398913] (crowd_statistics) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.413962] (crowd_statistics) CommandEnded: {'returncode': 2}
+[16.428733] (-) TimerEvent: {}
+[16.474402] (crowd_statistics) JobEnded: {'identifier': 'crowd_statistics', 'rc': 2}
+[16.476241] (-) EventReactorShutdown: {}

@@ -1,0 +1,25 @@
+[0.030s] Invoking command in '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble /usr/local/bin/cmake --build /capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics -- -j24 -l24
+[0.314s] [ 50%] [32mBuilding CXX object CMakeFiles/crowd_statistics_node.dir/src/crowd_statistics.cpp.o[0m
+[30.250s] [100%] [1m[32mLinking CXX executable crowd_statistics_node[0m
+[32.284s] [100%] Built target crowd_statistics_node
+[32.310s] Invoked command in '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble /usr/local/bin/cmake --build /capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics -- -j24 -l24
+[32.555s] Invoking command in '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble /usr/local/bin/cmake --install /capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics
+[32.732s] -- Install configuration: ""
+[32.732s] -- Installing: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/lib/crowd_statistics/crowd_statistics_node
+[32.742s] -- Set non-toolchain portion of runtime path of "/capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/lib/crowd_statistics/crowd_statistics_node" to ""
+[32.742s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/ament_index/resource_index/package_run_dependencies/crowd_statistics
+[32.743s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/ament_index/resource_index/parent_prefix_path/crowd_statistics
+[32.744s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/ament_prefix_path.sh
+[32.744s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/ament_prefix_path.dsv
+[32.744s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/path.sh
+[32.744s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/environment/path.dsv
+[32.744s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.bash
+[32.744s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.sh
+[32.745s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.zsh
+[32.745s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/local_setup.dsv
+[32.746s] -- Installing: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/package.dsv
+[32.755s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/ament_index/resource_index/packages/crowd_statistics
+[32.756s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/cmake/crowd_statisticsConfig.cmake
+[32.756s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/cmake/crowd_statisticsConfig-version.cmake
+[32.756s] -- Up-to-date: /capella/lib/python3.10/site-packages/crowd_statistics_ws/install/crowd_statistics/share/crowd_statistics/package.xml
+[32.756s] Invoked command in '/capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/capella/lib/python3.10/site-packages/capella_mmdet3d_node/install/capella_mmdet3d_node:/opt/ros/humble /usr/local/bin/cmake --install /capella/lib/python3.10/site-packages/crowd_statistics_ws/build/crowd_statistics
