@@ -187,7 +187,7 @@ public:
         this->declare_parameter<bool>("use_gpu", true);
         this->declare_parameter<int>("frame_skip", 1);
         this->declare_parameter<double>("h_fov_rad", 1.0472);
-        this->declare_parameter<bool>("debug_mode", true);
+        this->declare_parameter<bool>("debug_mode", false);  // 默认关闭调试输出
         this->declare_parameter<double>("default_person_width_rad", 0.20);
         this->declare_parameter<double>("density_radius", 2.0);
         this->declare_parameter<bool>("publish_visualization", true);
@@ -354,7 +354,6 @@ private:
     std::mutex front_mutex_, back_mutex_;
     static constexpr size_t MAX_QUEUE_SIZE = 50;
 
-    // 方法实现
     rclcpp::Time now() {
         return this->get_clock()->now();
     }
@@ -439,17 +438,22 @@ private:
         return points;
     }
 
+    // 修复：添加负号，修正图像坐标到相机角度的映射
+    // 图像坐标：x=0为左侧，x=img_w为右侧
+    // 相机坐标系：角度正方向为左侧（逆时针），负方向为右侧
+    // 因此需要负号：图像左侧(cx小) -> 角度正(左侧)，图像右侧(cx大) -> 角度负(右侧)
     void computeBboxAngles(const Detection &det, int img_width,
                            float &left_angle, float &right_angle) {
         const float img_w = static_cast<float>(img_width);
+        
         float cx_norm = (det.cx / img_w) - 0.5f;
+        // 关键修复：添加负号，使图像左侧对应相机左侧（正角度）
         float center_angle = -cx_norm * h_fov_rad_;
         
         float half_width_rad;
         if (det.bbox.width > 20 && det.bbox.width < img_width) {
             float width_norm = static_cast<float>(det.bbox.width) / img_w;
             half_width_rad = (width_norm * h_fov_rad_) / 2.0f;
-            // 修复：使用显式模板参数或强制类型转换
             half_width_rad = std::max<float>(half_width_rad, static_cast<float>(default_person_width_rad_ / 2.0));
         } else {
             half_width_rad = static_cast<float>(default_person_width_rad_ / 2.0);
@@ -539,23 +543,13 @@ private:
         if (frame.empty()) return;
 
         std::vector<Detection> detections = yolo_->detect(frame);
-        
-        if (debug_mode_ && !detections.empty()) {
-            RCLCPP_INFO(this->get_logger(), "[Cam %zu] YOLO: %zu detections", cam_idx, detections.size());
-        }
-        
         if (detections.empty()) return;
 
         rclcpp::Time img_stamp(msg->header.stamp, RCL_ROS_TIME);
         auto front_scan = getClosestLaserScan(img_stamp, 0);
         auto back_scan = getClosestLaserScan(img_stamp, 1);
         
-        if (!front_scan && !back_scan) {
-            if (debug_mode_) {
-                RCLCPP_WARN(this->get_logger(), "[Cam %zu] No laser scan available", cam_idx);
-            }
-            return;
-        }
+        if (!front_scan && !back_scan) return;
 
         std::vector<LaserCamPoint> all_points_cam;
         std::string laser_frame;
@@ -570,14 +564,9 @@ private:
             if (laser_frame.empty()) laser_frame = back_scan->header.frame_id;
         }
         
-        if (debug_mode_) {
-            RCLCPP_INFO(this->get_logger(), "[Cam %zu] Laser points: %zu", cam_idx, all_points_cam.size());
-        }
-        
         if (all_points_cam.empty()) return;
 
         std::vector<Person3D> new_persons;
-        int match_count = 0;
         
         for (const auto &det : detections) {
             if (det.class_id != 0) continue;
@@ -586,10 +575,15 @@ private:
             float left_angle, right_angle;
             computeBboxAngles(det, frame.cols, left_angle, right_angle);
 
+            // 调试输出（可选）
+            if (debug_mode_) {
+                RCLCPP_INFO(this->get_logger(), 
+                    "Cam[%zu] cx=%.1f (%.1f%%), angles: [%.3f, %.3f] rad", 
+                    cam_idx, det.cx, (det.cx/frame.cols)*100, left_angle, right_angle);
+            }
+
             LaserCamPoint best;
             if (findNearestInAngleRange(all_points_cam, left_angle, right_angle, best)) {
-                match_count++;
-                
                 geometry_msgs::msg::Point pt_laser;
                 pt_laser.x = best.orig_dist * std::cos(best.orig_angle);
                 pt_laser.y = best.orig_dist * std::sin(best.orig_angle);
@@ -623,11 +617,6 @@ private:
                     }
                 }
             }
-        }
-
-        if (debug_mode_) {
-            RCLCPP_INFO(this->get_logger(), 
-                "[Cam %zu] Result: %d/%zu matched", cam_idx, match_count, detections.size());
         }
 
         {
@@ -814,7 +803,7 @@ private:
             text_marker.color.b = 1.0f;
             text_marker.color.a = 1.0f;
             char buf[128];
-            snprintf(buf, sizeof(buf), "P%zu: %.1fm C%zu", i, p.distance, p.camera_id);
+            snprintf(buf, sizeof(buf), "P%zu: %.1fm", i, p.distance);
             text_marker.text = buf;
             markers.markers.push_back(text_marker);
         }
@@ -872,9 +861,10 @@ private:
         
         publishVisualization(unique_persons);
         
+        // 只输出人数、密度、压力
         RCLCPP_INFO(this->get_logger(), 
-            "Crowd | People: %.0f | Global: %.3f | Local: %.3f | Pressure: %.3f",
-            total_people, global_density, avg_local_density, pressure);
+            "People: %.0f | Density: %.3f | Pressure: %.3f",
+            total_people, global_density, pressure);
     }
 };
 
