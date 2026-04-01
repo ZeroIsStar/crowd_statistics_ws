@@ -5,46 +5,56 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# find dependencies
+# 查找依赖包 - 添加 visualization_msgs
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
-find_package(cv_bridge REQUIRED)
-find_package(image_transport REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(cv_bridge REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(visualization_msgs REQUIRED)  # 添加这一行
 
-include_directories(include)
-
-add_executable(crowd_statistics_node
-  src/crowd_statistics.cpp
+# 包含目录
+include_directories(
+  ${OpenCV_INCLUDE_DIRS}
 )
 
+# 创建可执行文件
+add_executable(crowd_statistics_node src/crowd_statistics.cpp)
+
+# 链接依赖 - 添加 visualization_msgs
 ament_target_dependencies(crowd_statistics_node
   rclcpp
   sensor_msgs
-  cv_bridge
-  image_transport
+  geometry_msgs
+  std_msgs
   tf2
   tf2_ros
   tf2_geometry_msgs
-  OpenCV
+  cv_bridge
+  visualization_msgs  # 添加这一行
 )
 
-target_include_directories(crowd_statistics_node PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
+target_link_libraries(crowd_statistics_node
+  ${OpenCV_LIBS}
 )
 
-install(TARGETS crowd_statistics_node
+# 安装目标
+install(TARGETS
+  crowd_statistics_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  ament_lint_auto_find_test_dependencies()
-endif()
+# 安装启动文件（如果有）
+install(DIRECTORY
+  launch
+  config
+  DESTINATION share/${PROJECT_NAME}
+  OPTIONAL
+)
 
 ament_package()
