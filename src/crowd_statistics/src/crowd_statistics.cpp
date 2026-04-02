@@ -180,14 +180,13 @@ public:
         this->declare_parameter<std::string>("model_path", "/capella/lib/python3.10/site-packages/crowd_statistics_ws/yolov8l.onnx");
         this->declare_parameter<double>("distance_threshold", 20.0);
         this->declare_parameter<double>("confidence_threshold", 0.4);
-        this->declare_parameter<double>("merge_distance", 0.8);
         this->declare_parameter<std::string>("base_frame", "base_link");
         this->declare_parameter<std::string>("map_frame", "map");
         this->declare_parameter<bool>("publish_map_frame", true);
         this->declare_parameter<bool>("use_gpu", true);
         this->declare_parameter<int>("frame_skip", 1);
         this->declare_parameter<double>("h_fov_rad", 1.0472);
-        this->declare_parameter<bool>("debug_mode", false);  // 默认关闭调试输出
+        this->declare_parameter<bool>("debug_mode", false);
         this->declare_parameter<double>("default_person_width_rad", 0.20);
         this->declare_parameter<double>("density_radius", 2.0);
         this->declare_parameter<bool>("publish_visualization", true);
@@ -211,7 +210,6 @@ public:
         std::string model_path = this->get_parameter("model_path").as_string();
         distance_threshold_ = this->get_parameter("distance_threshold").as_double();
         confidence_threshold_ = this->get_parameter("confidence_threshold").as_double();
-        merge_distance_ = this->get_parameter("merge_distance").as_double();
         base_frame_ = this->get_parameter("base_frame").as_string();
         map_frame_ = this->get_parameter("map_frame").as_string();
         publish_map_frame_ = this->get_parameter("publish_map_frame").as_bool();
@@ -225,6 +223,7 @@ public:
         angle_tolerance_ = this->get_parameter("angle_tolerance").as_double();
 
         // 相机配置
+        camera_names_ = {"front", "left", "right", "back"};
         std::vector<std::string> topics = {
             this->get_parameter("camera_topic_front").as_string(),
             this->get_parameter("camera_topic_left").as_string(),
@@ -251,6 +250,7 @@ public:
             cameras_[i].topic = topics[i];
             cameras_[i].frame_id = frames[i];
             cameras_[i].mutex = std::make_shared<std::mutex>();
+            cameras_[i].camera_name = camera_names_[i];
 
             cameras_[i].sub = this->create_subscription<sensor_msgs::msg::CompressedImage>(
                 cameras_[i].topic,
@@ -258,8 +258,8 @@ public:
                 [this, i](const sensor_msgs::msg::CompressedImage::SharedPtr msg) {
                     this->imageCallback(msg, i);
                 });
-            RCLCPP_INFO(this->get_logger(), "Subscribed to %s (frame=%s)",
-                        topics[i].c_str(), frames[i].c_str());
+            RCLCPP_INFO(this->get_logger(), "Subscribed to %s [%s] (frame=%s)",
+                        camera_names_[i].c_str(), topics[i].c_str(), frames[i].c_str());
         }
 
         // 订阅激光雷达
@@ -279,10 +279,10 @@ public:
         pub_stats_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("crowd_statistics", 10);
         pub_viz_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("crowd_visualization", 10);
 
-        // 定时器
+        // 定时器 (500ms周期)
         timer_ = this->create_wall_timer(500ms, [this]() { this->timerCallback(); });
 
-        RCLCPP_INFO(this->get_logger(), "CrowdStatisticsNode initialized");
+        RCLCPP_INFO(this->get_logger(), "CrowdStatisticsNode initialized [Non-overlapping FOV mode]");
     }
 
 private:
@@ -308,10 +308,12 @@ private:
     struct CameraInfo {
         std::string topic;
         std::string frame_id;
+        std::string camera_name;
         rclcpp::Subscription<sensor_msgs::msg::CompressedImage>::SharedPtr sub;
         std::shared_ptr<std::mutex> mutex;
         std::vector<Person3D> latest_persons;
         rclcpp::Time last_update{rclcpp::Time(0, 0, RCL_ROS_TIME)};
+        size_t frame_count{0};  // 统计帧计数
     };
 
     struct LaserCache {
@@ -324,6 +326,7 @@ private:
     std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
     std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
 
+    std::vector<std::string> camera_names_;
     std::vector<CameraInfo> cameras_;
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr sub_front_scan_;
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr sub_back_scan_;
@@ -339,7 +342,6 @@ private:
     std::string map_frame_;
     double distance_threshold_;
     double confidence_threshold_;
-    double merge_distance_;
     double angle_tolerance_;
     int frame_skip_;
     double h_fov_rad_;
@@ -438,10 +440,7 @@ private:
         return points;
     }
 
-    // 修复：添加负号，修正图像坐标到相机角度的映射
-    // 图像坐标：x=0为左侧，x=img_w为右侧
-    // 相机坐标系：角度正方向为左侧（逆时针），负方向为右侧
-    // 因此需要负号：图像左侧(cx小) -> 角度正(左侧)，图像右侧(cx大) -> 角度负(右侧)
+    // 修正：添加负号，修正图像坐标到相机角度的映射
     void computeBboxAngles(const Detection &det, int img_width,
                            float &left_angle, float &right_angle) {
         const float img_w = static_cast<float>(img_width);
@@ -543,12 +542,24 @@ private:
         if (frame.empty()) return;
 
         std::vector<Detection> detections = yolo_->detect(frame);
-        if (detections.empty()) return;
-
+        
         rclcpp::Time img_stamp(msg->header.stamp, RCL_ROS_TIME);
         auto front_scan = getClosestLaserScan(img_stamp, 0);
         auto back_scan = getClosestLaserScan(img_stamp, 1);
         
+        // 即使无检测也更新last_update，表示相机活跃
+        {
+            std::lock_guard<std::mutex> lock(*cameras_[cam_idx].mutex);
+            cameras_[cam_idx].last_update = now();
+            cameras_[cam_idx].frame_count++;
+        }
+
+        if (detections.empty()) {
+            std::lock_guard<std::mutex> lock(*cameras_[cam_idx].mutex);
+            cameras_[cam_idx].latest_persons.clear();
+            return;
+        }
+
         if (!front_scan && !back_scan) return;
 
         std::vector<LaserCamPoint> all_points_cam;
@@ -569,17 +580,17 @@ private:
         std::vector<Person3D> new_persons;
         
         for (const auto &det : detections) {
-            if (det.class_id != 0) continue;
+            if (det.class_id != 0) continue;  // 只检测person
             if (det.confidence < confidence_threshold_) continue;
 
             float left_angle, right_angle;
             computeBboxAngles(det, frame.cols, left_angle, right_angle);
 
-            // 调试输出（可选）
             if (debug_mode_) {
                 RCLCPP_INFO(this->get_logger(), 
-                    "Cam[%zu] cx=%.1f (%.1f%%), angles: [%.3f, %.3f] rad", 
-                    cam_idx, det.cx, (det.cx/frame.cols)*100, left_angle, right_angle);
+                    "[%s] cx=%.1f (%.1f%%), angles: [%.3f, %.3f] rad", 
+                    cameras_[cam_idx].camera_name.c_str(),
+                    det.cx, (det.cx/frame.cols)*100, left_angle, right_angle);
             }
 
             LaserCamPoint best;
@@ -622,7 +633,6 @@ private:
         {
             std::lock_guard<std::mutex> lock(*cameras_[cam_idx].mutex);
             cameras_[cam_idx].latest_persons = std::move(new_persons);
-            cameras_[cam_idx].last_update = now();
         }
     }
 
@@ -640,62 +650,26 @@ private:
         }
     }
 
-    std::vector<Person3D> mergeAndDeduplicate(const std::vector<Person3D> &persons) {
-        std::vector<Person3D> unique;
-        std::vector<bool> used(persons.size(), false);
+    // 无重叠区域：简单汇总，无需去重
+    std::vector<Person3D> aggregateAllPersons(std::vector<size_t> &camera_counts) {
+        std::vector<Person3D> all_persons;
+        camera_counts.assign(4, 0);
         
-        for (size_t i = 0; i < persons.size(); ++i) {
-            if (used[i]) continue;
+        for (size_t i = 0; i < cameras_.size(); ++i) {
+            std::lock_guard<std::mutex> cam_lock(*cameras_[i].mutex);
             
-            std::vector<size_t> cluster;
-            cluster.push_back(i);
-            used[i] = true;
-            
-            for (size_t j = i + 1; j < persons.size(); ++j) {
-                if (used[j]) continue;
-                
-                double dx = persons[i].position_base.x - persons[j].position_base.x;
-                double dy = persons[i].position_base.y - persons[j].position_base.y;
-                double dz = persons[i].position_base.z - persons[j].position_base.z;
-                double dist = std::hypot(dx, std::hypot(dy, dz));
-                
-                if (persons[i].camera_id == persons[j].camera_id) continue;
-                
-                if (dist < merge_distance_) {
-                    cluster.push_back(j);
-                    used[j] = true;
+            if (cameras_[i].last_update.nanoseconds() > 0) {
+                double diff = (now() - cameras_[i].last_update).seconds();
+                if (diff <= 2.0 && !cameras_[i].latest_persons.empty()) {
+                    camera_counts[i] = cameras_[i].latest_persons.size();
+                    all_persons.insert(all_persons.end(), 
+                                    cameras_[i].latest_persons.begin(), 
+                                    cameras_[i].latest_persons.end());
                 }
             }
-            
-            size_t best_idx = cluster[0];
-            double best_score = persons[best_idx].confidence / (1.0 + persons[best_idx].distance);
-            
-            for (size_t idx : cluster) {
-                double score = persons[idx].confidence / (1.0 + persons[idx].distance);
-                if (score > best_score) {
-                    best_score = score;
-                    best_idx = idx;
-                }
-            }
-            
-            Person3D merged = persons[best_idx];
-            if (cluster.size() > 1) {
-                double sum_x = 0, sum_y = 0, sum_z = 0;
-                for (size_t idx : cluster) {
-                    sum_x += persons[idx].position_base.x;
-                    sum_y += persons[idx].position_base.y;
-                    sum_z += persons[idx].position_base.z;
-                }
-                merged.position_base.x = sum_x / cluster.size();
-                merged.position_base.y = sum_y / cluster.size();
-                merged.position_base.z = sum_z / cluster.size();
-                merged.distance = std::hypot(merged.position_base.x, merged.position_base.y);
-            }
-            
-            unique.push_back(merged);
         }
         
-        return unique;
+        return all_persons;
     }
 
     double computeLocalDensity(const Person3D &person, const std::vector<Person3D> &all_persons) {
@@ -726,7 +700,7 @@ private:
         return total_pressure / persons.size();
     }
 
-    void publishVisualization(const std::vector<Person3D> &persons) {
+    void publishVisualization(const std::vector<Person3D> &persons, const std::vector<size_t> &camera_counts) {
         if (!publish_viz_) return;
         
         visualization_msgs::msg::MarkerArray markers;
@@ -763,6 +737,30 @@ private:
         range_marker.color.a = 0.1f;
         markers.markers.push_back(range_marker);
         
+        // 各摄像头人数文本标签（在机器人上方显示）
+        const std::string cam_names[4] = {"F", "L", "R", "B"};
+        const float colors[4][3] = {{1.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, {0.0f, 0.0f, 1.0f}, {1.0f, 1.0f, 0.0f}};
+        
+        for (int i = 0; i < 4; ++i) {
+            visualization_msgs::msg::Marker count_marker;
+            count_marker.header.frame_id = base_frame_;
+            count_marker.header.stamp = stamp;
+            count_marker.ns = "camera_counts";
+            count_marker.id = marker_id++;
+            count_marker.type = visualization_msgs::msg::Marker::TEXT_VIEW_FACING;
+            count_marker.action = visualization_msgs::msg::Marker::ADD;
+            count_marker.pose.position.x = 0;
+            count_marker.pose.position.y = 0;
+            count_marker.pose.position.z = 2.0 + i * 0.3;  // 垂直排列
+            count_marker.scale.z = 0.3f;
+            count_marker.color.r = colors[i][0];
+            count_marker.color.g = colors[i][1];
+            count_marker.color.b = colors[i][2];
+            count_marker.color.a = 1.0f;
+            count_marker.text = cam_names[i] + std::string(": ") + std::to_string(camera_counts[i]);
+            markers.markers.push_back(count_marker);
+        }
+        
         // 每个人员
         for (size_t i = 0; i < persons.size(); ++i) {
             const auto &p = persons[i];
@@ -781,13 +779,13 @@ private:
             person_marker.scale.y = 0.4;
             person_marker.scale.z = 0.4;
             
-            float colors[4][3] = {{1.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, {0.0f, 0.0f, 1.0f}, {1.0f, 1.0f, 0.0f}};
             person_marker.color.r = colors[p.camera_id % 4][0];
             person_marker.color.g = colors[p.camera_id % 4][1];
             person_marker.color.b = colors[p.camera_id % 4][2];
             person_marker.color.a = 0.8f;
             markers.markers.push_back(person_marker);
             
+            // 距离标签
             visualization_msgs::msg::Marker text_marker;
             text_marker.header.frame_id = base_frame_;
             text_marker.header.stamp = stamp;
@@ -803,7 +801,8 @@ private:
             text_marker.color.b = 1.0f;
             text_marker.color.a = 1.0f;
             char buf[128];
-            snprintf(buf, sizeof(buf), "P%zu: %.1fm", i, p.distance);
+            snprintf(buf, sizeof(buf), "P%zu: %.1fm [%s]", 
+                    i, p.distance, camera_names_[p.camera_id].c_str());
             text_marker.text = buf;
             markers.markers.push_back(text_marker);
         }
@@ -824,47 +823,46 @@ private:
     }
 
     void timerCallback() {
-        std::vector<Person3D> current_persons;
+        // 分别获取各摄像头人数和全部人员
+        std::vector<size_t> camera_counts(4, 0);
+        std::vector<Person3D> all_persons = aggregateAllPersons(camera_counts);
         
-        for (size_t i = 0; i < cameras_.size(); ++i) {
-            std::lock_guard<std::mutex> cam_lock(*cameras_[i].mutex);
-            
-            if (cameras_[i].last_update.nanoseconds() > 0) {
-                double diff = (now() - cameras_[i].last_update).seconds();
-                if (diff <= 2.0 && !cameras_[i].latest_persons.empty()) {
-                    current_persons.insert(current_persons.end(), 
-                                        cameras_[i].latest_persons.begin(), 
-                                        cameras_[i].latest_persons.end());
-                }
-            }
-        }
-        
-        std::vector<Person3D> unique_persons = mergeAndDeduplicate(current_persons);
-        
-        double total_people = static_cast<double>(unique_persons.size());
+        size_t total_people = all_persons.size();
         double area = M_PI * distance_threshold_ * distance_threshold_;
-        double global_density = (area > 0) ? total_people / area : 0.0;
+        double global_density = (area > 0) ? static_cast<double>(total_people) / area : 0.0;
         
+        // 计算平均局部密度
         double avg_local_density = 0.0;
-        if (!unique_persons.empty()) {
-            for (const auto &p : unique_persons) {
-                avg_local_density += computeLocalDensity(p, unique_persons);
+        if (!all_persons.empty()) {
+            for (const auto &p : all_persons) {
+                avg_local_density += computeLocalDensity(p, all_persons);
             }
-            avg_local_density /= unique_persons.size();
+            avg_local_density /= all_persons.size();
         }
         
-        double pressure = computeCrowdPressure(unique_persons);
+        double pressure = computeCrowdPressure(all_persons);
         
+        // 构建统计消息: [总数, 全局密度, 平均局部密度, 压力, 前, 左, 右, 后]
         std_msgs::msg::Float64MultiArray stats_msg;
-        stats_msg.data = {total_people, global_density, avg_local_density, pressure};
+        stats_msg.data.resize(8);
+        stats_msg.data[0] = static_cast<double>(total_people);
+        stats_msg.data[1] = global_density;
+        stats_msg.data[2] = avg_local_density;
+        stats_msg.data[3] = pressure;
+        stats_msg.data[4] = static_cast<double>(camera_counts[0]);
+        stats_msg.data[5] = static_cast<double>(camera_counts[1]);
+        stats_msg.data[6] = static_cast<double>(camera_counts[2]);
+        stats_msg.data[7] = static_cast<double>(camera_counts[3]);
+        
         pub_stats_->publish(stats_msg);
         
-        publishVisualization(unique_persons);
+        publishVisualization(all_persons, camera_counts);
         
-        // 只输出人数、密度、压力
+        // 日志输出各摄像头人数
         RCLCPP_INFO(this->get_logger(), 
-            "People: %.0f | Density: %.3f | Pressure: %.3f",
-            total_people, global_density, pressure);
+            "Total: %zu | Front: %zu | Left: %zu | Right: %zu | Back: %zu | Density: %.3f | Pressure: %.3f",
+            total_people, camera_counts[0], camera_counts[1], camera_counts[2], camera_counts[3],
+            global_density, pressure);
     }
 };
 
