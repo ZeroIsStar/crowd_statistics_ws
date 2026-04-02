@@ -126,3 +126,9 @@
   <br>
   <em>图1: 测试结果</em>
 </div>
+
+<div align="center">
+  <img src="left.png"  width="1000">
+  <br>
+  <em>图1: 测试结果</em>
+</div>
