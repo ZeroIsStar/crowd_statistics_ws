@@ -1,4 +1,4 @@
-# Crowd Statistics Node（增强版）功能与核心逻辑
+# Crowd Statistics Node功能与核心逻辑
 
 ## 1. 功能概述
 
